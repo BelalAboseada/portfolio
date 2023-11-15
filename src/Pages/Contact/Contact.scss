@@ -1,0 +1,219 @@
+@import '../../mixins.scss';
+
+.Contact__Container {
+    max-width: 1140px;
+    margin-inline: auto;
+    grid-template-columns: 4fr 8fr;
+}
+
+.Contact__Title {
+    font-size: var(--h3-font-size);
+    font-weight: var(--weight-600);
+    margin-bottom: 1rem;
+}
+
+.Contact__description {
+    font-size: var(--small-font-size);
+    line-height: 1.6;
+}
+
+.Contact__description,
+.Contact__info .info__item {
+    margin-bottom: 20px;
+}
+
+// Contact__info
+.Contact__info {
+    .info__item {
+        column-gap: 16px;
+    }
+
+    .icon__info {
+        color: var(--first-color);
+        font-size: var(--h2-font-size);
+    }
+
+    .info__title {
+        font-size: var(--small-font-size);
+    }
+
+    .info__desc {
+        font-family: var(--body-font);
+        font-size: var(--small-font-size);
+        font-weight: var(--weight-500);
+    }
+}
+
+.contact__social {
+    gap: 16px;
+
+    .contact_social_link {
+        color: var(--title-color);
+        background-color: var(--container-color);
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 44px;
+        transition: all 0.3s ease;
+
+        &:hover {
+            color: var(--text-white);
+            background: var(--first-color);
+        }
+    }
+}
+
+.group_form_input {
+    margin-top: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+
+    .form_input_div {
+        margin-bottom: 30px;
+
+    }
+
+
+}
+
+
+.form_control {
+    border: 1px solid var(--container-color);
+    background: var(--container-color);
+    color: var(--title-color);
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 30px;
+    font-size: var(--small-font-size);
+    position: relative;
+
+    &:focus {
+        border-color: var(--first-color);
+    }
+}
+
+.text_erea {
+    resize: none;
+    height: 160px;
+}
+
+
+//btn
+.Btn {
+    font-family: inherit;
+    font-size: 18px;
+    border: 1px solid var(--first-color);
+    color: var(--first-color);
+    padding: 0.8em 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+    width: fit-content;
+    margin-top: 5px;
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+        background: var(--first-color);
+        color: white;
+    }
+
+    &:active {
+        transform: scale(0.95);
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        background: var(--first-color);
+        color: white;
+    }
+
+    span {
+        display: block;
+        margin-left: 0.4em;
+        transition: all 0.3s;
+    }
+
+    svg {
+        width: 18px;
+        height: 18px;
+        fill: white;
+        transition: all 0.3s;
+    }
+
+    .svg-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.2);
+        margin-right: 0.5em;
+        transition: all 0.3s;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+    }
+
+    &:hover .svg-wrapper {
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    &:hover svg {
+        transform: rotate(45deg);
+    }
+}
+
+
+//responsive
+@media screen and (max-width: 1400px) {
+    .Contact__Container {
+        max-width: calc(100% - 180px);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .Portfolio_modal_content {
+        max-width: 600px;
+    }
+
+    .group_form_input {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 24px;
+    }
+
+    .group_form_input .form_input_div:last-child {
+        grid-column: 1/-1;
+    }
+
+    .form_input_div {
+        margin-bottom: 24px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .Contact__Container {
+        max-width: 720px;
+        grid-template-columns: 1fr;
+        row-gap: 48px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .Contact__Container {
+        max-width: 540px;
+    }
+}
+
+@media screen and (max-width:576px) {
+
+    .group_form_input {
+        grid-template-columns: 1fr;
+    }
+}
