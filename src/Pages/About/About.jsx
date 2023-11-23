@@ -1,20 +1,14 @@
 import Info from "./info/Info";
 import Stats from "./stats/Stats";
 import "./style.scss";
-import Cv from '../../assets/CV - letter.png'
 import Skills from "./Skills/Skills";
+import { Link } from "react-router-dom";
 
 function About() {
-  function handleDownloadClick() {
-    const link = document.createElement("a");
-    link.href = Cv;
-    link.download = "Cv";
-    link.click();
-  }
   return (
     <main className="section container">
       <section className="About">
-        <h2 className="section__title">
+        <h2 className="section__title"> 
           About <span>Me</span>
         </h2>
         <div className="about__container d-grid">
@@ -27,10 +21,10 @@ function About() {
             <ul className="info__list d-grid">
               <Info />
             </ul>
-            <div
-              href={Cv}
+            <Link
+              to="https://storage.googleapis.com/rezi-temp-download/0.cv48y79hv81700744457.pdf"
               className="button"
-              onClick={handleDownloadClick}
+              target="_blank"
               data-tooltip="CV"
             >
               <div className="button-wrapper">
@@ -56,7 +50,7 @@ function About() {
                   </svg>
                 </span>
               </div>
-            </div>
+            </Link>
           </div>
           <div
             className="stats d-grid"
@@ -79,3 +73,4 @@ function About() {
 }
 
 export default About;
+
