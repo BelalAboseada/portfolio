@@ -1,4 +1,3 @@
-
 import { FaTimes } from "react-icons/fa";
 import { themes } from "../../data";
 import "./theme.scss";
