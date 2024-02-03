@@ -21,8 +21,14 @@ const App = () => {
 
   return (
     <>
+<<<<<<< HEAD
       {loading ? (
         <Loader />
+=======
+      {/* loader */}
+      {loading ? (
+        <Loader initial={true} />
+>>>>>>> 61b7dec643d5f99903dc1bd44e8f63c4cfbbabc0
       ) : (
         <Container fluid>
           <Nav />
