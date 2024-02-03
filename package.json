@@ -24,6 +24,7 @@
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.6.2",
     "react-tsparticles": "^2.12.2",
+    "react-useanimations": "^2.10.0",
     "sass": "^1.57.1",
     "tsparticles": "^2.12.0"
   },

@@ -1,4 +1,3 @@
-// import React from 'react'
 import { useState } from "react";
 import "./Contact.scss";
 import {
@@ -58,7 +57,7 @@ const Contact = () => {
           data-aos="fade-right"
           data-aos-duration="500"
         >
-          <h3 className="Contact__Title"> Don't be Shy</h3>
+          <h3 className="Contact__Title"> Don't Be Shy</h3>
           <p className="Contact__description">
             Feel free to get in touch with me. i am always open to discussing
             new projects, creative ideas or opportunities to be part of your
@@ -69,7 +68,7 @@ const Contact = () => {
               <FaEnvelopeOpen className="icon__info" />
               <div>
                 <span className="info__title ">Mail Me</span>
-                <h4 className="info__desc">balalaboseada@icloud.com</h4>
+                <h4 className="info__desc">balalaboseada@gmail.com</h4>
               </div>
             </div>
             <div className="info__item d-flex align-items-center">
@@ -90,7 +89,7 @@ const Contact = () => {
               <FaFacebookF />
             </a>
             <a
-              href="https://github.com/BelalAboSeda"
+              href="https://github.com/BelalAboseada"
               className="contact_social_link"
               target="_blank"
               rel="noopener noreferrer"
@@ -98,7 +97,7 @@ const Contact = () => {
               <FaGithub />
             </a>
             <a
-              href="https://www.linkedin.com/in/belal-hesham-88aa8a268?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+              href="https://www.linkedin.com/in/belal-hesham?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
               className="contact_social_link"
               target="_blank"
               rel="noopener noreferrer"
@@ -106,7 +105,7 @@ const Contact = () => {
               <FaLinkedinIn />
             </a>
             <a
-              href="https://wa.me/01060074246"
+              href="https://wa.me/+201060074246"
               target="_blank"
               rel="noopener noreferrer"
               className="contact_social_link"

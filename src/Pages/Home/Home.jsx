@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import "./style.scss";
-// import homeimg from '../../assets/Programming-amico (1).png'
 import ParticlesComponent from "../../Components/particles/particles";
 function Home() {
   return (

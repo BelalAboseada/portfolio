@@ -1,4 +1,3 @@
-import React from "react";
 import { portfolio } from "../../data";
 import Card from "../../Components/Card/Card";
 import "./Style.scss";

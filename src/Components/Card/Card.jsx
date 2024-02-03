@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { FaTimes } from "react-icons/fa";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Card = ({ img, title, details }) => {
@@ -12,7 +11,7 @@ const Card = ({ img, title, details }) => {
 
   return (
     <div className="Portfolio_item">
-      <LazyLoadImage src={img} loading="lazy" effect="blur" type="image/webp" className="Portfolio_img"/>
+      <img src={img}  loading="lazy" type="image/webp" className="Portfolio_img"/>
 
       <div className="Portfolio_hover position-absolute d-grid" onClick={toggleModal} >
         <h3 className="Portfolio_title">{title}</h3>

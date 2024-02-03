@@ -21,9 +21,8 @@ const App = () => {
 
   return (
     <>
-      {/* loader */}
       {loading ? (
-        <Loader initial={true} />
+        <Loader />
       ) : (
         <Container fluid>
           <Nav />
