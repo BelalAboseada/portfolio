@@ -1,6 +1,6 @@
 # Portfolio
 
-Welcome to my portfolio! This project showcases my skills, projects, and experiences in the field of [Your Field/Area of Expertise].
+Welcome to my portfolio! This project showcases my skills, projects, and experiences in the field of Frontend Development
 
 ## Technologies Used
 
