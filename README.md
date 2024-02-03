@@ -31,9 +31,4 @@ Make sure you have the following installed:
 - [Node.js](https://nodejs.org/)
 - [npm](https://www.npmjs.com/) (comes with Node.js)
 
-### Installation
 
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/YourUsername/your-portfolio.git
