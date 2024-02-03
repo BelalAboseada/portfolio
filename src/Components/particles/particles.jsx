@@ -1,7 +1,6 @@
-
-import  { useCallback } from 'react';
-import { Particles } from 'react-tsparticles';
-import { loadFull } from 'tsparticles';
+import { useCallback } from "react";
+import { Particles } from "react-tsparticles";
+import { loadFull } from "tsparticles";
 
 const ParticlesComponent = () => {
   const particlesInit = useCallback((engine) => {
@@ -12,17 +11,17 @@ const ParticlesComponent = () => {
 
   const options = {
     background: {
-      color: '',
+      color: "",
     },
     interactivity: {
       events: {
         onClick: {
           enable: true,
-          mode: 'push',
+          mode: "push",
         },
         onHover: {
           enable: true,
-          mode: 'repulse',
+          mode: "repulse",
         },
         resize: true,
       },
@@ -44,10 +43,10 @@ const ParticlesComponent = () => {
     },
     particles: {
       color: {
-        value: '#ffffff',
+        value: "#ffffff",
       },
       links: {
-        color: '#ffffff',
+        color: "#ffffff",
         distance: 150,
         enable: true,
         opacity: 0.5,
@@ -57,9 +56,9 @@ const ParticlesComponent = () => {
         enable: true,
       },
       move: {
-        direction: 'none',
+        direction: "none",
         enable: true,
-        outMode: 'bounce',
+        outMode: "bounce",
         random: false,
         speed: 3,
         straight: false,
@@ -75,7 +74,7 @@ const ParticlesComponent = () => {
         value: 0.5,
       },
       shape: {
-        type: 'circle',
+        type: "circle",
       },
       size: {
         random: true,
