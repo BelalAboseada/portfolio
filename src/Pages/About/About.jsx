@@ -22,7 +22,7 @@ function About() {
               <Info />
             </ul>
             <Link
-              to="https://drive.google.com/file/d/1nA7UsMy4oNp2IbepNRGW7QOPDgM9nsa4/view?pli=1"
+              to="https://drive.google.com/file/d/1Ot_5t6ed1R2TANS3rw6u6mf6C7ct8OCl/view?usp=sharing"
               className="button"
               target="_blank"
               data-tooltip="CV"
