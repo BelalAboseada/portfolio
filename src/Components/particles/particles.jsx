@@ -93,3 +93,4 @@ const ParticlesComponent = () => {
   );
 };
 
+export default ParticlesComponent;
