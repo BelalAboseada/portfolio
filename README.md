@@ -22,13 +22,24 @@ Welcome to my portfolio! This project showcases my skills, projects, and experie
 - React TSParticles
 - Sass
 
-## Getting Started
-
-### Prerequisites
-
+## Installation & Usage Instructions:
 Make sure you have the following installed:
 
 - [Node.js](https://nodejs.org/)
 - [npm](https://www.npmjs.com/) (comes with Node.js)
+  
+To run this project locally on your machine you will need Node.js installed along with npm package manager
+1. Clone the repository using `git clone https://github.com/BelalAboseada/portfolio.git
+2. Navigate to the root directory of the cloned repo in your terminal
+3.  to install all required dependencies Run:
+ ```
+ npm install
+ ```
+4. To start the server Run:
+```
+npm run dev
+```
+
+
 
 
