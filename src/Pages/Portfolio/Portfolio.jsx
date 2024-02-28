@@ -1,11 +1,9 @@
 import { portfolio } from "../../data";
 import Card from "../../Components/Card/Card";
 import "./Style.scss";
-import Info from "../About/info/Info";
 
 const Portfolio = () => {
-  return (
-    <>
+  return (   
       <section className="portfolio section">
         <h2 className="section__title">
           My <span>Portfolio</span>
@@ -16,10 +14,8 @@ const Portfolio = () => {
           ))}
         </div>
       </section>
-      <section className="Portfolio__container">
-        <Info />
-      </section>
-    </>
+  
+    
   );
 };
 
