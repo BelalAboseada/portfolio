@@ -54,8 +54,8 @@ const Contact = () => {
       <div className="Contact__Container d-grid">
         <div
           className="Contact__data"
-          data-aos="fade-right"
-          data-aos-duration="500"
+          // data-aos="fade-right"
+          // data-aos-duration="500"
         >
           <h3 className="Contact__Title"> Don't Be Shy</h3>
           <p className="Contact__description">
@@ -116,8 +116,8 @@ const Contact = () => {
         </div>
         <div
           className="contact__form "
-          data-aos="fade-left"
-          data-aos-duration="500"
+          // data-aos="fade-left"
+          // data-aos-duration="500"
         >
           <div className="group_form_input d-grid">
             <div className="form_input_div">

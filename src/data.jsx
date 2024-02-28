@@ -1,4 +1,3 @@
-
 import {
   FaHome,
   FaUser,
@@ -7,7 +6,7 @@ import {
   FaGithub,
 } from "react-icons/fa";
 import { FiFileText, FiExternalLink } from "react-icons/fi";
-
+// Projects
 import Movix from "./assets/Movix2.png";
 import CodeZone from "./assets/Code Zone.png";
 import Bondi from "./assets/Bondi.png";
@@ -17,45 +16,36 @@ import Crud from "./assets/Crud.png";
 import Kasper from "./assets/Kasper.png";
 import starbucks from "./assets/Starbuks.png";
 import Todo from "./assets/Todo.png";
-
-import Theme1 from './assets/blue-circle-png-8.png';
-import Theme2 from './assets/Green.png';
-import Theme3 from './assets/orange.png';
-import Theme4 from './assets/Red.png';
-import Theme5 from './assets/gold.png';
-import Theme6 from './assets/Bink.png';
-import Theme7 from './assets/Purple.png';
-import Theme8 from './assets/Purple2.png';
-
-export const links = [
-  {
-    id: 1,
-    name: "Home",
-    icon: <FaHome className="nav__icon" />,
-    path: "/",
-  },
-
-  {
-    id: 2,
-    name: "About",
-    icon: <FaFolderOpen className="nav__icon" />,
-    path: "/about",
-  },
-
-  {
-    id: 3,
-    name: "Portfolio",
-    icon: <FaUser className="nav__icon" />,
-    path: "/portfolio",
-  },
-
-  {
-    id: 4,
-    name: "Contact",
-    icon: <FaEnvelopeOpen className="nav__icon" />,
-    path: "/contact",
-  },
-];
+// Theme
+import Theme1 from "./assets/blue-circle-png-8.png";
+import Theme2 from "./assets/Green.png";
+import Theme3 from "./assets/orange.png";
+import Theme4 from "./assets/Red.png";
+import Theme5 from "./assets/gold.png";
+import Theme6 from "./assets/Bink.png";
+import Theme7 from "./assets/Purple.png";
+import Theme8 from "./assets/Purple2.png";
+// Skills
+import Html from "./assets/html_ph9Z0PP.png";
+import Js from "./assets/Js.webp";
+import Css from "./assets/css.webp";
+import React from "./assets/React.webp";
+import Redux from "./assets/Redux.png";
+import Git from "./assets/git_nnrA35B.png";
+import Github from "./assets/code_LmikzpY.png";
+import Firease from "./assets/Firbase.webp";
+import Bootsrap from "./assets/Bootstrap.png";
+import sass from "./assets/sass.svg";
+import Google from "./assets/search_v42JcMU.png";
+import Api from "./assets/api_jWHrF5L.png";
+import Deploy from "./assets/rocket.png";
+import Vscode from "./assets/visual-studio_PvbYL6E.png";
+import Gpt from "./assets/chatbot_hKae2Xk.png";
+import Agile from "./assets/Agile.png";
+// Status
+import Experience from "./assets/Sucsess.png";
+import Sucsess from "./assets/experiance.png";
+import Comment from "./assets/Comment.png";
 
 export const personalInfo = [
   {
@@ -103,38 +93,65 @@ export const personalInfo = [
   {
     id: 8,
     title: "Email : ",
-    description: "balalaboseada@icloud.com",
+    description: "balalaboseada@gmail.com",
   },
   {
     id: 10,
     title: "Langages : ",
-    description: "swahili, English,Germany",
+    description: "swahili, English ,Germany",
+  },
+];
+
+export const links = [
+  {
+    id: 1,
+    name: "Home",
+    icon: <FaHome className="nav__icon" />,
+    path: "/",
+  },
+
+  {
+    id: 2,
+    name: "About",
+    icon: <FaFolderOpen className="nav__icon" />,
+    path: "/about",
+  },
+
+  {
+    id: 3,
+    name: "Portfolio",
+    icon: <FaUser className="nav__icon" />,
+    path: "/portfolio",
+  },
+
+  {
+    id: 4,
+    name: "Contact",
+    icon: <FaEnvelopeOpen className="nav__icon" />,
+    path: "/contact",
   },
 ];
 
 export const stats = [
   {
     id: 1,
-    no: "1",
-    title: "Year of <br /> Experience",
+    no: "+1",
+    img: Experience,
+    title: "Year of Experience",
   },
 
   {
     id: 2,
-    no: "+20",
-    title: "Completed <br /> Projects",
+    no: "+10",
+    img: Sucsess,
+    title: "Completed Project",
   },
 
   {
     id: 3,
-    no: "15+",
-    title: "Happy <br /> Customers",
-  },
-
-  {
-    id: 4,
-    no: "35+",
-    title: " Awards <br /> Won",
+    no: "",
+    img: Comment,
+    title: "Be The First Comment",
   },
 ];
 
@@ -142,67 +159,104 @@ export const skills = [
   {
     id: 1,
     title: "Html",
-    percentage: "80",
+    img: Html,
+    Cat: "Skills",
   },
 
   {
     id: 2,
     title: "Javascript",
-    percentage: "75",
+    img: Js,
+    Cat: "Skills",
   },
 
   {
     id: 3,
     title: "Css",
-    percentage: "80",
+    img: Css,
+    Cat: "Skills",
   },
 
   {
     id: 4,
     title: "React",
-    percentage: "70",
+    img: React,
+    Cat: "Skills",
   },
   {
     id: 5,
     title: "Redux",
-    percentage: "50",
+    img: Redux,
+    Cat: "Skills",
   },
 
   {
     id: 6,
-    title: "Wordpress",
-    percentage: "50",
+    title: "Firease",
+    img: Firease,
+    Cat: "Tools",
   },
 
   {
     id: 7,
     title: "git",
-    percentage: "60",
+    img: Git,
+    Cat: "Tools",
   },
 
   {
     id: 8,
     title: "GitHub",
-    percentage: "65",
+    img: Github,
+    Cat: "Tools",
   },
   {
     id: 9,
-    title: "Framer Motion",
-    percentage: "35",
+    title: "G(Search)",
+    img: Google,
+    Cat: "Tools",
   },
   {
     id: 10,
     title: "sass",
-    percentage: "35",
+    img: sass,
+    Cat: "Skills",
   },
   {
     id: 11,
     title: "Bootstrap",
-    percentage: "70",
-  },  {
+    img: Bootsrap,
+    Cat: "Skills",
+  },
+  {
     id: 12,
-    title: "ReactBootstrap",
-    percentage: "50",
+    title: "Api",
+    img: Api,
+    Cat: "Skills",
+  },
+  {
+    id: 13,
+    title: "Deploy",
+    img: Deploy,
+    Cat: "Skills",
+  },
+  {
+    id: 14,
+    title: "VS Code",
+    img: Vscode,
+    Cat: "Tools",
+  },
+  {
+    id: 15,
+    title: "ChatGpt",
+    img: Gpt,
+    Cat: "Tools",
+  },
+  {
+    id: 15,
+    title: "Agile(Scrum)",
+    img: Agile,
+    Cat: "Skills",
   },
 ];
 
@@ -227,7 +281,7 @@ export const portfolio = [
             target="_blank"
             rel="noopener noreferrer"
           >
-            https://github.com/BelalAboSeda/Movix.git
+            https://github.com/BelalAboSeada/Movix.git
           </a>
         ),
       },
@@ -262,11 +316,11 @@ export const portfolio = [
         title: "Repo : ",
         desc: (
           <a
-            href="https://github.com/BelalAboSeda/code-zone.git"
+            href="https://github.com/BelalAboSeada/code-zone.git"
             target="_blank"
             rel="noopener noreferrer"
           >
-            https://github.com/BelalAboSeda/code-zone.git
+            https://github.com/BelalAboSeada/code-zone.git
           </a>
         ),
       },
@@ -275,15 +329,16 @@ export const portfolio = [
         title: "Preview : ",
         desc: (
           <a
-            href="https://belalaboseda.github.io/code-zone/"
+            href="https://BelalAboSeada.github.io/code-zone/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            https://belalaboseda.github.io/code-zone/
+            https://BelalAboSeada.github.io/code-zone/
           </a>
         ),
       },
     ],
+    
   },
   {
     id: 3,
@@ -301,11 +356,11 @@ export const portfolio = [
         title: "Repo : ",
         desc: (
           <a
-            href="https://github.com/BelalAboSeda/bondi.git"
+            href="https://github.com/BelalAboSeada/bondi.git"
             target="_blank"
             rel="noopener noreferrer"
           >
-            https://github.com/BelalAboSeda/bondi.git
+            https://github.com/BelalAboSeada/bondi.git
           </a>
         ),
       },
@@ -314,11 +369,11 @@ export const portfolio = [
         title: "Preview : ",
         desc: (
           <a
-            href="https://belalaboseda.github.io/bondi/"
+            href="https://BelalAboSeada.github.io/bondi/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            https://belalaboseda.github.io/bondi/
+            https://BelalAboSeada.github.io/bondi/
           </a>
         ),
       },
@@ -341,11 +396,11 @@ export const portfolio = [
         title: "Repo : ",
         desc: (
           <a
-            href="https://github.com/BelalAboSeda/Pixel.git"
+            href="https://github.com/BelalAboSeada/Pixel.git"
             target="_blank"
             rel="noopener noreferrer"
           >
-            https://github.com/BelalAboSeda/Pixel.git
+            https://github.com/BelalAboSeada/Pixel.git
           </a>
         ),
       },
@@ -354,11 +409,11 @@ export const portfolio = [
         title: "Preview : ",
         desc: (
           <a
-            href="https://belalaboseda.github.io/Pixel/"
+            href="https://BelalAboSeada.github.io/Pixel/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            https://belalaboseda.github.io/Pixel/
+            https://BelalAboSeada.github.io/Pixel/
           </a>
         ),
       },
@@ -380,11 +435,11 @@ export const portfolio = [
         title: "Repo : ",
         desc: (
           <a
-            href="https://belal-aboseda.github.io/twitter-clone.git"
+            href="https://BelalAboSeada.github.io/twitter-clone.git"
             target="_blank"
             rel="noopener noreferrer"
           >
-            https://belal-aboseda.github.io/twitter-clone.git
+            https://BelalAboSeada.github.io/twitter-clone.git
           </a>
         ),
       },
@@ -393,11 +448,11 @@ export const portfolio = [
         title: "Preview : ",
         desc: (
           <a
-            href="https://belal-aboseda.github.io/twitter-clone/"
+            href="https://BelalAboSeada.github.io/twitter-clone/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            https://belal-aboseda.github.io/twitter-clone/
+            https://BelalAboSeada.github.io/twitter-clone/
           </a>
         ),
       },
@@ -419,11 +474,11 @@ export const portfolio = [
         title: "Repo : ",
         desc: (
           <a
-            href="https://github.com/BelalAboSeda/cruds-system.git"
+            href="https://github.com/BelalAboSeada/cruds-system.git"
             target="_blank"
             rel="noopener noreferrer"
           >
-            https://github.com/BelalAboSeda/cruds-system.git
+            https://github.com/BelalAboSeada/cruds-system.git
           </a>
         ),
       },
@@ -432,11 +487,11 @@ export const portfolio = [
         title: "Preview : ",
         desc: (
           <a
-            href="https://belalaboseda.github.io/cruds-system/"
+            href="https://BelalAboSeada.github.io/cruds-system/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            https://belalaboseda.github.io/cruds-system/
+            https://BelalAboSeada.github.io/cruds-system/
           </a>
         ),
       },
@@ -458,11 +513,11 @@ export const portfolio = [
         title: "Repo : ",
         desc: (
           <a
-            href="https://github.com/Belal-AboSeda/kasper-templete.git"
+            href="https://github.com/BelalAboSeada/kasper-templete.git"
             target="_blank"
             rel="noopener noreferrer"
           >
-            https://github.com/Belal-AboSeda/kasper-templete.git
+            https://github.com/BelalAboSeada/kasper-templete.git
           </a>
         ),
       },
@@ -471,11 +526,11 @@ export const portfolio = [
         title: "Preview : ",
         desc: (
           <a
-            href="https://belal-aboseda.github.io/kasper-templete/"
+            href="https://BelalAboSeada.github.io/kasper-templete/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            https://belal-aboseda.github.io/kasper-templete/
+            https://BelalAboSeada.github.io/kasper-templete/
           </a>
         ),
       },
@@ -497,11 +552,11 @@ export const portfolio = [
         title: "Repo : ",
         desc: (
           <a
-            href="https://belalaboseda.github.io/starbucks/"
+            href="https://BelalAboSeada.github.io/starbucks/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            https://belalaboseda.github.io/starbucks/
+            https://BelalAboSeada.github.io/starbucks/
           </a>
         ),
       },
@@ -510,11 +565,11 @@ export const portfolio = [
         title: "Preview : ",
         desc: (
           <a
-            href="https://github.com/BelalAboSeda/starbucks.git"
+            href="https://github.com/BelalAboSeada/starbucks.git"
             target="_blank"
             rel="noopener noreferrer"
           >
-            https://github.com/BelalAboSeda/starbucks.git
+            https://github.com/BelalAboSeada/starbucks.git
           </a>
         ),
       },
@@ -536,11 +591,11 @@ export const portfolio = [
         title: "Repo : ",
         desc: (
           <a
-            href="https://github.com/BelalAboSeda/Todolist.git"
+            href="https://github.com/BelalAboSeada/Todolist.git"
             target="_blank"
             rel="noopener noreferrer"
           >
-            https://github.com/BelalAboSeda/Todolist.git
+            https://github.com/BelalAboSeada/Todolist.git
           </a>
         ),
       },
@@ -549,11 +604,11 @@ export const portfolio = [
         title: "Preview : ",
         desc: (
           <a
-            href="https://belalaboseda.github.io/Todolist/"
+            href="https://BelalAboSeada.github.io/Todolist/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            https://belalaboseda.github.io/Todolist/
+            https://BelalAboSeada.github.io/Todolist/
           </a>
         ),
       },
@@ -565,60 +620,49 @@ export const themes = [
   {
     id: 1,
     img: Theme1,
-    color: '#00A9FF',
+    color: "#00A9FF",
+    name: "Blue",
   },
 
   {
     id: 2,
     img: Theme2,
-    color: '#41A145',
+    color: "#41A145",
   },
 
   {
     id: 3,
     img: Theme3,
-    color: '#FF5C26',
+    color: "#FF5C26",
   },
 
   {
     id: 4,
     img: Theme4,
-    color: ' #C0131A',
+    color: " #C0131A",
   },
 
   {
     id: 5,
     img: Theme5,
-    color: '#FFCD4B',
+    color: "#FFCD4B",
   },
 
   {
     id: 6,
     img: Theme6,
-    color: '#FF00FF',
+    color: "#FF00FF",
   },
 
   {
     id: 7,
     img: Theme7,
-    color: '#8F1FAC',
+    color: "#8F1FAC",
   },
 
   {
     id: 8,
     img: Theme8,
-    color: 'hsl(271, 76%, 53%)',
+    color: "hsl(271, 76%, 53%)",
   },
-
-  // {
-  //   id: 9,
-  //   img: Theme9,
-  //   color: 'hsl(88, 65%, 43%)',
-  // },
-
-  // {
-  //   id: 10,
-  //   img: Theme10,
-  //   color: 'hsl(42, 100%, 50%)',
-  // },
 ];

@@ -1,62 +1,69 @@
-
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { skills } from "../../../data";
-import { CircularProgressbar } from "react-circular-progressbar";
-import "react-circular-progressbar/dist/styles.css";
-import { useLocation } from "react-router-dom";
+import { Col, Row } from "react-bootstrap";
+import "../style.scss";
 
 const Skills = () => {
-  const location = useLocation();
-  const [animate, setAnimate] = useState(false);
+  const [category, setCategory] = useState("Skills");
+  const [selectedTab, setSelectedTab] = useState(0);
+  const [left, setLeft] = useState(0);
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [location]);
+  // Function to handle tab selection
+  const handleTabClick = (cat, index) => {
+    setLeft(index * 100);
+    setCategory(cat);
+    setSelectedTab(index);
+  };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      console.log(scrollPosition);
-
-      // Check if the scroll position is greater than or equal to 150
-      if (scrollPosition >= 250) {
-        setAnimate(true);
-      } else {
-        setAnimate(false);
-      }
-    };
-
-    // Add event listener for scroll
-    window.addEventListener("scroll", handleScroll);
-
-    // Remove event listener when the component unmounts
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []); // Empty dependency array ensures that this effect runs only once on mount
+  // Filter skills based on category
+  const filteredSkills = skills.filter((skill) => skill.Cat === category);
 
   return (
-    <>
-      {skills.map(({ title, percentage }, index) => {
-        return (
-          <div className="progress__box" key={index}>
-            <div className="progress__circle">
-              <CircularProgressbar
-                value={animate ? percentage : 0}
-                strokeWidth={7.5}
-                text={`${animate ? percentage : 0}%`}
-              />
-            </div>
-            <h3 className="skills__title">{title}</h3>
+    <Row>
+      <Col lg={6} sm={12} className="skills__content">
+        <h2 className="Skills_heading">What My Programming Skills Included?</h2>
+        <p className="skills_desc">
+          I specialize in creating intuitive and responsive web interfaces using
+          HTML, CSS, and JavaScript, working closely with backend teams to
+          integrate via RESTful APIs.
+        </p>
+        <div className="switchingTabs">
+          {/* Map through categories to create tab buttons */}
+          <div className="tabItems">
+            {["Skills", "Tools"].map((cat, index) => (
+              <button
+                key={index}
+                className={`tabItem ${selectedTab === index ? "active" : ""}`}
+                onClick={() => handleTabClick(cat, index)}
+              >
+                {cat}
+              </button>
+            ))}
+            <span className="movingBg" style={{ left }} />
           </div>
-        );
-      })}
-    </>
+        </div>
+      </Col>
+
+      {/* Render skills based on category */}
+      <Col lg={6} sm={12}>
+        <div className="skills__container d-grid">
+          {filteredSkills.map(({ title, img }, index) => (
+            <Col key={index}>
+              <div
+                className="img"
+                data-aos="fade-down"
+                data-aos-anchor-placement="top-left"
+                data-aos-duration="900"
+                data-text={title}
+              >
+                <img src={img} alt={title} className="Skills_img" />
+              </div>
+            </Col>
+          ))}
+        </div>
+      </Col>
+    </Row>
   );
 };
 
 export default Skills;
-
-
-
-

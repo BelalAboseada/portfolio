@@ -36,7 +36,6 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  // -webkit-text-size-adjust: 100%;
 }
 
 @media screen and (max-width: 1200px ) {
@@ -102,8 +101,11 @@ img {
   max-width: 100%;
 }
 
-
-
 ::-webkit-scrollbar {
   display: none;
+}
+::selection{
+  color: var(--container-color);
+  background-color: var(--first-color);
+
 }
