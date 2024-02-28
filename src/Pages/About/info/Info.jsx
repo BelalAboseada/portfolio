@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import InfoImg from "../../../assets/About Me2.svg";
 function Info() {
   return (
@@ -12,6 +13,31 @@ function Info() {
             focus on creating visually appealing and interactive designs that
             enhance the user's browsing experience.{" "}
           </p>
+          <Link className="CvBtn" target="_blank" to="https://drive.google.com/file/d/1Ot_5t6ed1R2TANS3rw6u6mf6C7ct8OCl/view?usp=sharing" data-tooltip="Cv">
+            <div className="button-wrapper">
+              <div className="text">Download Cv</div>
+              <span className="icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  role="img"
+                  width="2em"
+                  height="2em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"
+                  ></path>
+                </svg>
+              </span>
+            </div>
+          </Link>
         </div>
         <div className="info__image">
           <img src={InfoImg} alt="InfoImg" />
