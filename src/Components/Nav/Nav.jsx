@@ -12,34 +12,34 @@ const Nav = () => {
   console.log(menuRef?.current?.classList.value);
   return (
     <>
-    <nav className="Nav " ref={menuRef}>
-      <div className="Nav-menu">
-        <ul className="Nav-list" ref={menuRef}>
-          {links.map(({ icon, name, path }, index) => {
-            return (
-              <li className="Nav-item" key={index}>
-                <NavLink
-                  to={path}
-                  aria-label={name}
-                  className={({ isActive }) =>
-                    isActive ? "Nav-link Nav-active" : "Nav-link"
-                  }
-                  onClick={toggleMenu}
-                >
-                  {icon}
-                  <h3 className="nav-name">{name}</h3>
-                </NavLink>
-              </li>
-            );
-          })}
-        </ul>
-      </div>
-    </nav>
-    
+      <nav className="Nav " ref={menuRef}>
+        <div className="Nav-menu">
+          <ul className="Nav-list" ref={menuRef}>
+            {links.map(({ icon, name, path }, index) => {
+              return (
+                <li className="Nav-item" key={index}>
+                  <NavLink
+                    to={path}
+                    aria-label={name}
+                    className={({ isActive }) =>
+                      isActive ? "Nav-link Nav-active" : "Nav-link"
+                    }
+                    onClick={toggleMenu}
+                  >
+                    {icon}
+                    <h3 className="nav-name">{name}</h3>
+                  </NavLink>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      </nav>
+
       <span className="mobile__menu" onClick={toggleMenu}>
-        <UseAnimations animation={menu2}  size={56}  className="Menu_bar" />
+        <UseAnimations animation={menu2} size={56} className="Menu_bar" />
       </span>
-      </>
+    </>
   );
 };
 
