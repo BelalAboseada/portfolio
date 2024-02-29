@@ -46,7 +46,7 @@ const Card = ({ id, img, title, details, tech }) => {
               initial={{ scale: 0.7, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.7, opacity: 0 }}
-              // transition={{ duration: 0.3 }}
+              transition={{ duration: 0.3 }}
             >
               <motion.img
                 src={img}
@@ -54,8 +54,6 @@ const Card = ({ id, img, title, details, tech }) => {
                 type="image/webp"
                 className="modal_img"
                 alt={title}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
               />
               <motion.h3 className="modal_title text-center" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }}>{title}</motion.h3>
               <div className="modal_list  d-grid">
