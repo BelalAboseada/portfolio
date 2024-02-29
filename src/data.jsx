@@ -338,7 +338,6 @@ export const portfolio = [
         ),
       },
     ],
-    
   },
   {
     id: 3,

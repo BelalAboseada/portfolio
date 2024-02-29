@@ -8,7 +8,6 @@ import Portfolio from "./Pages/Portfolio/Portfolio";
 import Contact from "./Pages/Contact/Contact";
 import { Route, Routes, useLocation } from "react-router-dom";
 import Themes from "./Components/Themes/Themes";
-import ProjectDetails from "./Pages/Portfolio/ProjectDetailes";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -32,9 +31,6 @@ const App = () => {
             <Route index element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/ProjectDetails/:id" element={ <ProjectDetails />}/>
-             
-          
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </Container>
