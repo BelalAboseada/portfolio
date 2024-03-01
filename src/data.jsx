@@ -16,6 +16,8 @@ import Crud from "./assets/Crud.png";
 import Kasper from "./assets/Kasper.png";
 import starbucks from "./assets/Starbuks.png";
 import Todo from "./assets/Todo.png";
+import YumDash from "./assets/Screenshot (44).png";
+import Zakat from "./assets/Screenshot (6).png"
 // Theme
 import Theme1 from "./assets/blue-circle-png-8.png";
 import Theme2 from "./assets/Green.png";
@@ -341,6 +343,84 @@ export const portfolio = [
   },
   {
     id: 3,
+    img: YumDash,
+    title: "Yum Dash",
+    category: "React",
+    details: [
+      {
+        icon: <FiFileText />,
+        title: "Project : ",
+        desc: "Food delivery E-commrce App",
+      },
+      {
+        icon: <FaGithub />,
+        title: "Repo : ",
+        desc: (
+          <a
+            href="https://github.com/BelalAboseada/Yum-Dash.git"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            https://github.com/BelalAboseada/Yum-Dash.git
+          </a>
+        ),
+      },
+      {
+        icon: <FiExternalLink />,
+        title: "Preview : ",
+        desc: (
+          <a
+            href="https://yum-dash.web.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+           In Progress
+          </a>
+        ),
+      },
+    ],
+  },
+  {
+    id: 4,
+    img: Zakat,
+    title: "Zakat App",
+    category: "React",
+    details: [
+      {
+        icon: <FiFileText />,
+        title: "Project : ",
+        desc: "Calculator for  Zakat",
+      },
+      {
+        icon: <FaGithub />,
+        title: "Repo : ",
+        desc: (
+          <a
+            href="https://github.com/BelalAboseada/Zakat-on-Camels.git"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            https://github.com/BelalAboseada/Zakat-on-Camels.git
+          </a>
+        ),
+      },
+      {
+        icon: <FiExternalLink />,
+        title: "Preview : ",
+        desc: (
+          <a
+            href="https://zakat-on-camel.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            https://zakat-on-camel.vercel.app{" "}
+          </a>
+        ),
+      },
+    ],
+  },
+  {
+    id: 5,
     img: Bondi,
     title: "Bondi",
     category: "Html&Css",
@@ -378,9 +458,8 @@ export const portfolio = [
       },
     ],
   },
-
   {
-    id: 4,
+    id: 6,
     img: Pixel,
     title: "Pixel",
     category: "js",
@@ -419,7 +498,7 @@ export const portfolio = [
     ],
   },
   {
-    id: 5,
+    id: 7,
     img: TwitterClone,
     title: "Twitter Clone",
     category: "Html&Css",
@@ -458,7 +537,7 @@ export const portfolio = [
     ],
   },
   {
-    id: 6,
+    id: 8,
     img: Crud,
     title: "Crud",
     category: "js",
@@ -497,7 +576,7 @@ export const portfolio = [
     ],
   },
   {
-    id: 7,
+    id: 9,
     img: Kasper,
     title: "Kasper",
     category: "Html&Css",
@@ -536,7 +615,7 @@ export const portfolio = [
     ],
   },
   {
-    id: 8,
+    id: 10,
     img: starbucks,
     title: "starbucks",
     category: "Html&Css",
@@ -575,7 +654,7 @@ export const portfolio = [
     ],
   },
   {
-    id: 9,
+    id: 11,
     img: Todo,
     title: "Todolist",
     category: "Html&Css",

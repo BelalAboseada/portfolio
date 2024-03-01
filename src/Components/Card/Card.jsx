@@ -34,6 +34,7 @@ const Card = ({ id, img, title, details, tech }) => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
+            transition={{ type: "spring", bounce: 0, duration: 0.2 }}
           >
             <motion.button
               className="Modal_close"
@@ -46,7 +47,6 @@ const Card = ({ id, img, title, details, tech }) => {
               initial={{ scale: 0.7, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.7, opacity: 0 }}
-              transition={{ duration: 0.3 }}
             >
               <motion.img
                 src={img}
