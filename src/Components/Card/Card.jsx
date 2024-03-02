@@ -33,7 +33,7 @@ const Card = ({ id, img, title, details, tech }) => {
             className="modal_overlay"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 1.2 }}
+            transition={{ duration: 0.7, ease: "easeInOut" }}
           >
             <motion.button
               className="Modal_close"
@@ -41,12 +41,7 @@ const Card = ({ id, img, title, details, tech }) => {
             >
               <IoClose />
             </motion.button>
-            <motion.div
-              className="modal_content"
-               initial={{ scale: 0.7, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.7, opacity: 0 }}
-            >
+            <motion.div className="modal_content">
               <motion.img
                 src={img}
                 loading="lazy"
@@ -54,7 +49,14 @@ const Card = ({ id, img, title, details, tech }) => {
                 className="modal_img"
                 alt={title}
               />
-              <motion.h3 className="modal_title text-center" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }}>{title}</motion.h3>
+              <motion.h3
+                className="modal_title text-center"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.2 }}
+              >
+                {title}
+              </motion.h3>
               <div className="modal_list  d-grid">
                 {details.map((detail, index) => (
                   <div key={index} className="modal_item">

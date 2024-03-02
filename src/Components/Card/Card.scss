@@ -7,7 +7,7 @@
   max-width: 650px;
   width: 100%;
   height: auto;
-  overflow: hidden;
+  overflow: scroll;
   z-index: 100;
   background-color: var(--container-color);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -80,6 +80,6 @@
 .item_details {
   font-weight: var(--weight-600);
 }
-.Portfolio_title{
+.Portfolio_title {
   color: var(--border-color);
 }

@@ -52,8 +52,7 @@ const Portfolio = () => {
               key={item.id}
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              transition={{ duration: 1.2 }}
-            >
+              transition={{ duration: 1.2 }}>
               <Card {...item} />
             </motion.div>
           ))}
