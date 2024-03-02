@@ -32,9 +32,8 @@ const Card = ({ id, img, title, details, tech }) => {
             key="modal"
             className="modal_overlay"
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ type: "spring", bounce: 0, duration: 0.2 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1.2 }}
           >
             <motion.button
               className="Modal_close"

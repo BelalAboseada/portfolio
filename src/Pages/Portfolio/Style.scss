@@ -75,6 +75,9 @@
     max-width: 720px;
     grid-template-columns: repeat(2, 1fr);
   }
+  .category-buttons button {
+    margin: 0px 10px 40px 10px;
+  }
 }
 
 @media screen and (max-width: 768px) {

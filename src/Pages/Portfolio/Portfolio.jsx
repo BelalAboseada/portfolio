@@ -17,7 +17,7 @@ const Portfolio = () => {
       <h2 className="section__title">
         My <span>Portfolio</span>
       </h2>
-
+      {/* Filter Buttons */}
       <div className="category-buttons d-flex justify-content-center align-items-center">
         <button
           className={!selectedCategory ? "active" : ""}
@@ -43,10 +43,8 @@ const Portfolio = () => {
         >
           Html&Css
         </button>
-        {/* Add more buttons for other categories as needed */}
       </div>
 
-      {/* Portfolio container with animation */}
       <motion.div className="Portfolio__container d-grid" layout>
         <AnimatePresence>
           {filteredPortfolio.map((item) => (
