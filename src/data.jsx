@@ -657,7 +657,7 @@ export const portfolio = [
     id: 11,
     img: Todo,
     title: "Todolist",
-    category: "Html&Css",
+    category: "js",
     details: [
       {
         icon: <FiFileText />,
