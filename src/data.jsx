@@ -17,7 +17,7 @@ import Kasper from "./assets/Kasper.png";
 import starbucks from "./assets/Starbuks.png";
 import Todo from "./assets/Todo.png";
 import YumDash from "./assets/Screenshot (44).png";
-import Zakat from "./assets/Screenshot (6).png"
+import Zakat from "./assets/Screenshot (6).png";
 // Theme
 import Theme1 from "./assets/blue-circle-png-8.png";
 import Theme2 from "./assets/Green.png";
@@ -374,7 +374,7 @@ export const portfolio = [
             target="_blank"
             rel="noopener noreferrer"
           >
-           In Progress
+            In Progress
           </a>
         ),
       },
@@ -630,11 +630,11 @@ export const portfolio = [
         title: "Repo : ",
         desc: (
           <a
-            href="https://BelalAboSeada.github.io/starbucks/"
+            href="https://github.com/BelalAboSeada/starbucks.git"
             target="_blank"
             rel="noopener noreferrer"
           >
-            https://BelalAboSeada.github.io/starbucks/
+            https://github.com/BelalAboSeada/starbucks.git
           </a>
         ),
       },
@@ -643,11 +643,11 @@ export const portfolio = [
         title: "Preview : ",
         desc: (
           <a
-            href="https://github.com/BelalAboSeada/starbucks.git"
+            href="https://BelalAboSeada.github.io/starbucks/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            https://github.com/BelalAboSeada/starbucks.git
+            https://BelalAboSeada.github.io/starbucks/
           </a>
         ),
       },

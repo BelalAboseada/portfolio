@@ -44,7 +44,7 @@ const Card = ({ id, img, title, details, tech }) => {
             </motion.button>
             <motion.div
               className="modal_content"
-              initial={{ scale: 0.7, opacity: 0 }}
+               initial={{ scale: 0.7, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.7, opacity: 0 }}
             >
