@@ -374,7 +374,7 @@ export const portfolio = [
             target="_blank"
             rel="noopener noreferrer"
           >
-            In Progress
+            https://yum-dash.web.app/
           </a>
         ),
       },

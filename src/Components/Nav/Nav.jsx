@@ -24,7 +24,7 @@ const Nav = () => {
                     className={({ isActive }) =>
                       isActive ? "Nav-link Nav-active" : "Nav-link"
                     }
-                    onClick={toggleMenu}
+                    // onClick={toggleMenu}
                   >
                     {icon}
                     <h3 className="nav-name">{name}</h3>
@@ -35,7 +35,6 @@ const Nav = () => {
           </ul>
         </div>
       </nav>
-
       <span className="mobile__menu" onClick={toggleMenu}>
         <UseAnimations animation={menu2} size={56} className="Menu_bar" />
       </span>

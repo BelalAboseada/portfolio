@@ -102,9 +102,9 @@ section {
   }
 
   &:hover {
-    transform: translateY(-7px);
-    transition: all 0.7s ease-in-out;
-    box-shadow: 0px 5px 10px rgba(0, 0 , 0.2);
+    transform: translateY(-8px);
+    transition:all 0.4s ease-in-out;
+
   }
 }
 
@@ -372,7 +372,7 @@ section {
   .InfoContent,
   .info__image {
     flex: 1;
-    padding:5px 0;
+    padding: 5px 0;
   }
 
   .info__image img {

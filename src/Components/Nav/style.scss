@@ -136,14 +136,14 @@
     backdrop-filter: blur(5px);
     transition: all 0.8s ease-in-out;
   }
-  .mobile__menu {
+ .mobile__menu {
     display: block;
   }
-  .show__menu {
+.show__menu {
     display: block;
     transform: translateX(0%);
   }
-  .Menu_bar {
+ .Menu_bar {
     position: fixed;
     display: block;
     width: 40px !important;
@@ -155,6 +155,9 @@
     padding: 3px;
     margin: 10px;
     z-index: 100;
+    // input{
+
+    // }
   }
 
   .Nav-menu {
