@@ -16,7 +16,7 @@ const App = () => {
     // Simulating loading state
     setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 3000);
   }, []);
 
   return (
