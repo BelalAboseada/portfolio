@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import "./style.scss";
 import { useRef } from "react";
 import UseAnimations from "react-useanimations";
-import menu4 from "react-useanimations/lib/menu4";
+import menu2 from "react-useanimations/lib/menu2";
 
 const Nav = () => {
   const menuRef = useRef(null);
@@ -36,7 +36,7 @@ const Nav = () => {
         </div>
       </nav>
       <span className="mobile__menu" onClick={toggleMenu}>
-        <UseAnimations animation={menu4} size={56} className="Menu_bar" />
+        <UseAnimations animation={menu2} size={56} className="Menu_bar" />
       </span>
     </>
   );

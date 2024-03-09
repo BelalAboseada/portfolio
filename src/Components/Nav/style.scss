@@ -149,6 +149,7 @@
     width: 40px !important;
     height: 40px !important;
     backdrop-filter: blur(15px);
+    background-color: var(--container-color);
     border-radius: 50%;
     right: 10px;
     padding: 3px;
@@ -166,6 +167,7 @@
     width: 100%;
     overflow: hidden;
   }
+
 
   .Nav-item {
     margin: 10px;
