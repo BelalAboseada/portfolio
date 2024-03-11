@@ -3,10 +3,10 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border-radius: 14px;
-  max-width: 650px;
-  width:100%;
-  height:auto;
+  border-radius: 14px 14px 0 0;
+  width: 100%;
+  max-width: 1220px;
+  height: 100vh;
   overflow: scroll;
   z-index: 100;
   background-color: var(--container-color);
@@ -18,7 +18,7 @@
 
 .modal_content {
   width: 100%;
-  height: auto;
+  height: 100%;
   padding: 20px;
   border-radius: 8px;
 }
@@ -26,8 +26,10 @@
 .modal_img {
   max-width: 100%;
   width: 100%;
+  max-height: 70vh;
   height: auto;
-  object-fit: contain;
+  object-fit: cover;
+
   border-radius: 8px;
 }
 // modal close
@@ -82,4 +84,18 @@
 }
 .Portfolio_title {
   color: var(--border-color);
+}
+@media screen and (max-width: 1024px) {
+  .modal_overlay {
+    max-width: 1000px;
+    height: 85vh;
+    top: 60%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .modal_overlay {
+    max-width: 760px;
+    height: 70vh;
+    top: 70%;
+  }
 }

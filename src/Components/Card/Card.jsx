@@ -31,9 +31,9 @@ const Card = ({ id, img, title, details, tech }) => {
           <motion.div
             key="modal"
             className="modal_overlay"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1  }}
-            exit={{opacity: 0 }}
+            initial={{ opacity: 0.5, y: "-0%", x: "-50%" }}
+            animate={{ opacity: 1, y: "-50%" }}
+            exit={{ opacity: 0, x: "-50%", y: "-0%" }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
           >
             <motion.button
@@ -52,9 +52,9 @@ const Card = ({ id, img, title, details, tech }) => {
               />
               <motion.h3
                 className="modal_title text-center"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.2 }}
+                // initial={{ opacity: 0 }}
+                // animate={{ opacity: 1 }}
+                // transition={{ delay: 0.2 }}
               >
                 {title}
               </motion.h3>
