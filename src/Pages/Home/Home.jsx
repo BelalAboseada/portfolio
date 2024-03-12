@@ -21,7 +21,7 @@ function Home() {
               building excellent software that improves the lives of those
               around me.
             </p>
-            <Link to="/about" className="Btn ">
+            <Link to="/about" className="Btn">
               <span>More about me </span>
               <div className="svg-wrapper-1">
                 <div className="svg-wrapper">
