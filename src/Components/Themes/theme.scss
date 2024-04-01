@@ -58,9 +58,9 @@
 
 .Switcher_Close {
     cursor: pointer;
-    position: absolute;
+    position: fixed;
     font-size: 20px;
-    top: 2%;
+    top: 5px;
     right: 15px;
 }
 
@@ -86,6 +86,6 @@
     }
 
     .Switcher_Close {
-        top: 5%;
+        right: 12px;
     }
 }
