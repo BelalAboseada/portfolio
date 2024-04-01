@@ -1,7 +1,7 @@
 import { links } from "../../data";
 import { NavLink } from "react-router-dom";
-import "./style.scss";
 import { useEffect, useState } from "react";
+import "./style.scss";
 
 const Nav = () => {
   const [Show, setShow] = useState("bottom");
