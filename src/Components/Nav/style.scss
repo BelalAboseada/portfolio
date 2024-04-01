@@ -8,6 +8,7 @@
 }
 
 .Nav-item {
+  cursor: pointer;
   margin-block: 20px;
   z-index: 1000;
 }
@@ -123,95 +124,50 @@
   .Nav {
     all: unset;
     position: fixed;
-    display: block;
-    flex-direction: row;
-    width: 100% !important;
-    writing-mode: vertical-lr;
-    height: 100% !important;
-    justify-content: center;
-    z-index: 100;
-    left: 0;
-    transform: translateX(100%);
-    background-color: transparent;
-    backdrop-filter: blur(5px);
-    transition: all 0.8s ease-in-out;
-  }
-  .mobile__menu {
-    display: block;
-  }
-  .show__menu {
-    display: block;
-    transform: translateX(0%);
-  }
-  .Menu_bar {
-    position: fixed;
-    display: block;
-    width: 40px !important;
-    height: 40px !important;
-    backdrop-filter: blur(90px);
-    background-color: var(--container-color);
-    border-radius: 50%;
-    right: 10px;
-    padding: 3px;
-    margin: 10px;
-    z-index: 100;
-  }
-
-  .Nav-menu {
-    all: unset;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100% !important;
+    height: 80px !important;
+    writing-mode: vertical-lr;
+    z-index: 100;
+    right: 0;
+    bottom: 0;
+    transform: translateY(0px);
+    background: var(--container-color);
+    border-radius: 22px 22px 0 0;
+    backdrop-filter: blur(5px);
+    transition: all 0.8s ease-in-out;
+    &.bottom {
+      background: var(--container-color);
+      backdrop-filter: blur(3.5px);
+      -webkit-backdrop-filter: blur(3.5px);
+    }
+    &.show {
+      background-color: var(--container-color);
+    }
+    &.hide {
+      transform: translateY(100px);
+    }
+  }
+
+  .Nav-menu {
+    display: flex;
     align-items: center;
     height: 100%;
     width: 100%;
     overflow: hidden;
+    margin-top: 20px;
   }
-
 
   .Nav-item {
-    margin: 10px;
-    float: none;
-    &:focus {
-      color: var(--first-color);
-    }
-    &:hover {
-      color: var(--first-color);
-    }
-  }
-
-  .Nav-list {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-  }
-  .Nav-link {
-    all: unset;
-    color: var(--text-color);
-    font-size: 26px;
-    &:hover {
-      color: var(--first-color);
-    }
+    transition: all 0.3s ease-in-out;
   }
   .Nav-active {
-    color: var(--first-color);
+    backdrop-filter: blur(5px);
+    border-radius: 50%;
   }
-  .nav__icon {
-    display: none;
-  }
-
   .nav-name {
-    all: unset;
-    margin: 5px;
-    writing-mode: horizontal-tb;
-    display: block;
-    position: relative;
-    display: block;
-  }
-  .Nav-item:hover .nav-name {
-    display: block;
-    right: 0;
+    display: none;
   }
 }

@@ -39,7 +39,7 @@ const Themes = () => {
             return <ThemeItem key={index} {...theme} ChangeColor={ChangeColor} />;
           })}
         </div>
-        <div className="Switcher_Close" onClick={() => SetShow_switcher(!Show_switcher)}>
+        <div className="ccn" onClick={() => SetShow_switcher(!Show_switcher)}>
           <FaTimes className="Switcher_icon" />
         </div>
       </div>
