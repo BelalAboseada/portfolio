@@ -13,7 +13,7 @@ function Info() {
             focus on creating visually appealing and interactive designs that
             enhance the user's browsing experience.{" "}
           </p>
-          <Link className="CvBtn" target="_blank" to="https://drive.google.com/file/d/1Ot_5t6ed1R2TANS3rw6u6mf6C7ct8OCl/view?usp=sharing" data-tooltip="Cv">
+          <Link className="CvBtn" target="_blank" to="https://drive.google.com/file/d/1J8pnoHghaaN0lAgyA7_84BV_zC2RvO7U/view?usp=sharing" data-tooltip="Cv">
             <div className="button-wrapper">
               <div className="text">Download Cv</div>
               <span className="icon">

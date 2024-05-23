@@ -52,9 +52,8 @@ const Contact = () => {
         Get In<span>Touch</span>
       </h2>
       <div className="Contact__Container d-grid">
-        <div
-          className="Contact__data"
-        >
+        <div className="Contact__data">
+           {/* eslint-disable-next-line react/no-unescaped-entities */}
           <h3 className="Contact__Title"> Don't Be Shy</h3>
           <p className="Contact__description">
             Feel free to get in touch with me. i am always open to discussing
@@ -112,9 +111,7 @@ const Contact = () => {
             </a>
           </div>
         </div>
-        <div
-          className="contact__form "
-          >
+        <div className="contact__form ">
           <div className="group_form_input d-grid">
             <div className="form_input_div">
               <input
