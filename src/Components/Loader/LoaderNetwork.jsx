@@ -1,4 +1,4 @@
-import "./contentLoader.scss";
+import "./LoaderNetwork.scss";
 
 const ContentLoader = () => {
   return (
