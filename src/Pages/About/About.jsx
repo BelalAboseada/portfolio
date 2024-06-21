@@ -3,7 +3,7 @@ import "./style.scss";
 import Skills from "./Skills/Skills";
 import Info from "./info/Info";
 import InternetConnection from "../../servies/internetConnection";
-import Loader from "../../Components/Loader/ContentLoader";
+import Loader from "../../Components/Loader/contentLoader";
 import { useState } from "react";
 
 function About() {
