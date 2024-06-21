@@ -4,7 +4,7 @@ import { portfolio } from "../../data";
 import Card from "../../Components/Card/Card";
 import "./Style.scss";
 import InternetConnection from "../../servies/internetConnection";
-import ContentLoader from "../../Components/Loader/contentLoader";
+import ContentLoader from "../../Components/Loader/LoaderNetwork";
 
 const Portfolio = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
