@@ -20,6 +20,8 @@ const Skills = () => {
 
   return (
     <Row>
+      <h6 className="Sec_Title">ـــــ My Skills</h6>
+
       <Col lg={6} sm={12} className="skills__content">
         <h2 className="Skills_heading">What My Programming Skills Included?</h2>
         <p className="skills_desc">

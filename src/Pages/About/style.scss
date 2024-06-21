@@ -16,6 +16,7 @@ $font-family_1: "Arial";
 main.container {
   max-width: 1140px;
   margin-inline: auto;
+    min-height: 100vh; 
 }
 
 .about__container {
@@ -103,8 +104,7 @@ section {
 
   &:hover {
     transform: translateY(-8px);
-    transition:all 0.4s ease-in-out;
-
+    transition: all 0.4s ease-in-out;
   }
 }
 
@@ -326,6 +326,7 @@ section {
   }
 }
 
+
 // Responsive
 @media screen and (max-width: 1400px) {
   main.container {
@@ -382,6 +383,7 @@ section {
     height: 300px;
   }
 }
+
 @media screen and (max-width: 768px) {
   main.container {
     max-width: 540px;

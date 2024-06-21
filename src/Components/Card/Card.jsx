@@ -52,9 +52,7 @@ const Card = ({ id, img, title, details, tech }) => {
               />
               <motion.h3
                 className="modal_title text-center"
-                // initial={{ opacity: 0 }}
-                // animate={{ opacity: 1 }}
-                // transition={{ delay: 0.2 }}
+              
               >
                 {title}
               </motion.h3>

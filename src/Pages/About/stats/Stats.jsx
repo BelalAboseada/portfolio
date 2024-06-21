@@ -16,11 +16,11 @@ const Stats = () => {
           data-aos-duration="900"
         >
           <div className="stats__box">
-          <img className="status_img" src={img} alt={title} />
-          <div className="Status_cotent">
-            <h3 className="stats__no">{no}</h3>
-            <p className="stats__title">{title}</p>
-          </div>
+            <img className="status_img" src={img} alt={title} />
+            <div className="Status_cotent">
+              <h3 className="stats__no">{no}</h3>
+              <p className="stats__title">{title}</p>
+            </div>
           </div>
         </Col>
       ))}
