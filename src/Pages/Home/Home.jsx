@@ -13,7 +13,7 @@ function Home() {
              data-aos-duration="500"
           >
             <h1 className="title">
-              <span>I am Belal Hesham </span> Frontend Dev.
+              <span>I am Belal Hesham</span>  Web developer.
             </h1>
             <p className="home-description">
               I am Egyption based Web developer & Frontend developer focused on

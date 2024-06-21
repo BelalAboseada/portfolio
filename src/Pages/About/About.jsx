@@ -3,8 +3,8 @@ import "./style.scss";
 import Skills from "./Skills/Skills";
 import Info from "./info/Info";
 import InternetConnection from "../../servies/internetConnection";
+import Loader from "../../Components/Loader/ContentLoader";
 import { useState } from "react";
-import ContentLoader from "../../Components/Loader/contentLoader";
 
 function About() {
   const [isLoading, setIsLoading] = useState(false);
@@ -32,7 +32,7 @@ function About() {
           </section>
         </section>
       ) : (
-        <ContentLoader />
+        <Loader />
       )}
     </main>
   );
