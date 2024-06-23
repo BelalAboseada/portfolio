@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-function InternetConnection({ setIsLoading }) {
+function InternetConnection({ setIsOffline }) {
   useEffect(() => {
     const updateConnectionStatus = () => {
       const connection =
@@ -10,9 +10,9 @@ function InternetConnection({ setIsLoading }) {
       if (connection) {
         const effectiveType = connection.effectiveType;
         if (effectiveType === "2g" || effectiveType === "slow-2g") {
-          setIsLoading(true);
+          setIsOffline(true);
         } else {
-          setIsLoading(false);
+          setIsOffline(false);
         }
       }
     };
@@ -35,7 +35,7 @@ function InternetConnection({ setIsLoading }) {
         connection.removeEventListener("change", updateConnectionStatus);
       }
     };
-  }, [setIsLoading]);
+  }, [setIsOffline]);
 
   return null;
 }

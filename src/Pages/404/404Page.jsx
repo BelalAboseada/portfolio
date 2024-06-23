@@ -1,6 +1,6 @@
 import { Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import "./error.scss"
+import "./error404.scss";
 import img404 from "../../assets/Oops! 404 Error with a broken robot-cuate (1).svg"
 
 const Page404 = () => {
