@@ -7,7 +7,6 @@ import "./Style.scss";
 const Portfolio = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
 
-  // Filtered portfolio based on selected category
   const filteredPortfolio = selectedCategory
     ? portfolio.filter((item) => item.category === selectedCategory)
     : portfolio;
