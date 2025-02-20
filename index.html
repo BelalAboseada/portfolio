@@ -47,24 +47,53 @@
     <link rel="canonical" href="https://belal-portfolio.vercel.app/" />
 
     <!-- Structured Data (JSON-LD for Rich Snippets) -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Belal Hesham Portfolio",
-        "url": "https://belal-portfolio.vercel.app/",
-        "headline": "Frontend Developer | React.js | Freelancer",
-        "description": "Explore my portfolio showcasing my web development projects and skills.",
-        "publisher": {
-          "@type": "Organization",
-          "name": "Belal Hesham",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://belal-portfolio.vercel.app/assets/developer.png"
-          }
-        }
-      }
-    </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Belal Hesham",
+  "jobTitle": "Frontend Developer",
+  "url": "https://belal-portfolio.vercel.app/",
+  "sameAs": [
+    "https://www.linkedin.com/in/belal-hesham/",
+    "https://github.com/BelalAboseada",
+  ],
+  "description": "Professional Frontend Developer specializing in React.js development and modern web technologies. Creating responsive, performant web applications with user-centered design.",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://belal-portfolio.vercel.app/developer.png",
+    "width": "800",
+    "height": "800",
+    "caption": "Belal Hesham Professional Photo"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Cairo",
+    "addressRegion": "EG",
+    "addressCountry": "Egypt"
+  },
+  "knowsAbout": [
+    "React.js",
+    "JavaScript (ES6+)",
+    "HTML5",
+    "CSS3",
+    "Responsive Web Design",
+    "Frontend Architecture",
+    "Web Performance Optimization"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "mailto:belalaboseada@gmail.com",
+    "contactType": "professional inquiry",
+    "availableLanguage": ["English", "Arabic"]
+  },
+  {% comment %} "alumniOf": {
+    "@type": "EducationalOrganization",
+    "name": "Alazhur University",
+    "description": "Bachelor's Degree in Alsun"
+  } {% endcomment %}
+}
+</script>
   </head>
   <body>
     <div id="root"></div>
