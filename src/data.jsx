@@ -8,6 +8,10 @@ import {
 import { FiFileText, FiExternalLink } from "react-icons/fi";
 // Projects
 import Movix from "./assets/Movix2.png";
+import Medari from "./assets/Mdari.png";
+import Request from "./assets/Request.jpg";
+import AlamalDashboard from "./assets/Alamal-dashboard.png";
+import TChat from "./assets/t.chat.png";
 import CodeZone from "./assets/Code Zone.png";
 import Bondi from "./assets/Bondi.png";
 import Pixel from "./assets/Pixel.png";
@@ -266,6 +270,50 @@ export const skills = [
 export const portfolioData = [
   {
     id: 1,
+    img: Request,
+    title: "Request",
+    category: "React",
+    desc: "Project Management App",
+
+    Overview: [
+      "Implemented roles-based access control for consultants, owners, and contractors.",
+      "Create dynamic Roles For Users ",
+      " Managed tasks, projects, and deadlines effectively.",
+      "Integrated real-time chat and notification features. ",
+      "Conducted data analysis to provide valuable insights. ",
+      "Designed and developed an admin dashboard for managing the platform",
+    ],
+  },
+  {
+    id: 2,
+    img: TChat,
+    title: "T-chat",
+    category: "React",
+    desc: "dashboard for a mobile app",
+
+    Overview: [
+      " dashboard for a mobile app to track tasks efficiently, ensuring seamless task management and real-time updates.",
+      "Implemented a user-friendly interface for easy navigation and task organization.",
+      "Added features like search, filtering, sorting, and pagination to enhance user experience.",
+      "Built a responsive design using CSS Grid and Flexbox for optimal viewing on various devices.",
+    ],
+  },
+  {
+    id: 3,
+    img: AlamalDashboard,
+    title: "Alamal",
+    category: "React",
+    desc: "medical sales management system",
+
+    Overview: [
+      "Implemented functionalities for medical representatives, pharmacies, drivers, sales managers, invoices, visits ,transactions, reports, and an admin dashboard",
+      "Create dynamic Roles For Users ",
+      " Successfully managed data related to medical reps, pharmacies, sales, and other key aspects of the medical sales process. .",
+      "Ensured data integrity and security through proper validation and error handling ",
+    ],
+  },
+  {
+    id: 4,
     img: Movix,
     title: "Movix",
     category: "React",
@@ -296,8 +344,55 @@ export const portfolioData = [
       "Responsive design with smooth animations",
     ],
   },
+
   {
-    id: 2,
+    id: 5,
+    img: Medari,
+    title: "Medari",
+    category: "HTML & CSS",
+    desc: "Articles Landing Page",
+    Overview: [
+      "Landing page for showcasing articles with dynamic content",
+      "Built with Django backend and custom HTML/CSS/Sass UI",
+      "Integrated dynamic content loading via Django templates",
+      "Fully responsive layout across devices",
+      "Collaborated with backend team for seamless integration",
+      "Interactive elements with smooth transitions",
+    ],
+  },
+  {
+    id: 6,
+    img: YumDash,
+    title: "Yum Dash",
+    category: "React",
+    desc: "Food delivery E-commerce App",
+
+    details: [
+      {
+        icon: <FaGithub />,
+        title: "Repo : ",
+        desc: {
+          title: "https://github.com/BelalAboSeada/Yum-Dash.git",
+          link: "https://github.com/BelalAboSeada/Yum-Dash.git",
+        },
+      },
+      {
+        icon: <FiExternalLink />,
+        title: "Preview : ",
+        desc: {
+          title: "https://yum-dash.web.app/",
+          link: "https://yum-dash.web.app/",
+        },
+      },
+    ],
+    Overview: [
+      "Food ordering platform with real-time cart management",
+      "Integrated with Firebase to manage the data",
+      "Responsive design with smooth animations",
+    ],
+  },
+  {
+    id: 7,
     img: CodeZone,
     title: "Code Zone",
     category: "JS",
@@ -326,37 +421,7 @@ export const portfolioData = [
     ],
   },
   {
-    id: 3,
-    img: YumDash,
-    title: "Yum Dash",
-    category: "React",
-    desc: "Food delivery E-commerce App",
-    details: [
-      {
-        icon: <FaGithub />,
-        title: "Repo : ",
-        desc: {
-          title: "https://github.com/BelalAboSeada/Yum-Dash.git",
-          link: "https://github.com/BelalAboSeada/Yum-Dash.git",
-        },
-      },
-      {
-        icon: <FiExternalLink />,
-        title: "Preview : ",
-        desc: {
-          title: "https://yum-dash-belal.vercel.app/",
-          link: "https://yum-dash-belal.vercel.app/",
-        },
-      },
-    ],
-    Overview: [
-      "Food ordering platform with real-time cart management",
-      "Integrated with Firebase to manage the data",
-      "Responsive design with smooth animations",
-    ],
-  },
-  {
-    id: 4,
+    id: 8,
     img: Zakat,
     title: "Zakat App",
     category: "React",
@@ -385,7 +450,7 @@ export const portfolioData = [
     ],
   },
   {
-    id: 5,
+    id: 9,
     img: Bondi,
     title: "Bondi",
     category: "HTML & CSS",
@@ -414,7 +479,7 @@ export const portfolioData = [
     ],
   },
   {
-    id: 6,
+    id: 10,
     img: Pixel,
     title: "Pixel",
     category: "JS",
@@ -443,7 +508,7 @@ export const portfolioData = [
     ],
   },
   {
-    id: 7,
+    id: 11,
     img: TwitterClone,
     title: "Twitter Clone",
     category: "HTML & CSS",
@@ -472,7 +537,7 @@ export const portfolioData = [
     ],
   },
   {
-    id: 8,
+    id: 12,
     img: Crud,
     title: "CRUD System",
     category: "JS",
@@ -501,7 +566,7 @@ export const portfolioData = [
     ],
   },
   {
-    id: 9,
+    id: 13,
     img: Kasper,
     title: "Kasper",
     category: "HTML & CSS",
@@ -530,7 +595,7 @@ export const portfolioData = [
     ],
   },
   {
-    id: 10,
+    id: 14,
     img: starbucks,
     title: "Starbucks",
     category: "HTML & CSS",
@@ -559,7 +624,7 @@ export const portfolioData = [
     ],
   },
   {
-    id: 11,
+    id: 15,
     img: Todo,
     title: "Todo List",
     category: "JS",

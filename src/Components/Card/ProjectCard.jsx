@@ -5,7 +5,12 @@ import { generateSlug } from "../../utils/slugGenerator";
 export const ProjectCard = ({ title, img, id }) => (
   <div className={styles.Card}>
     <Link to={`/ProjectDetails/${generateSlug(title)}`}>
-      <img className={styles.Card_image} src={img} alt={title} />
+      <img
+        className={styles.Card_image}
+        src={img}
+        alt={title}
+        loading="lazy"
+      />
       <h3 className={styles.Card_title}>{title}</h3>
     </Link>
   </div>

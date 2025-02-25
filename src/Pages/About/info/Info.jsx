@@ -29,7 +29,7 @@ function Info() {
         <Link
           className="CvBtn"
           target="_blank"
-          to="https://drive.google.com/file/d/1SlUIGTh0j0h1Y1VTR0shhN5bezMF92Tz/view?usp=sharing"
+          to="https://drive.google.com/file/d/1wsTXzmI736TrNq_zMCQPLb3YbUHzkzCs/view?usp=sharing"
           data-tooltip="Cv"
         >
           <div className="button-wrapper">

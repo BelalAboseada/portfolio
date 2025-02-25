@@ -1,15 +1,21 @@
-import { Link, useParams } from "react-router-dom";
+import { Link, redirect, useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import styles from "./style.module.scss";
 import { portfolioData as portfolio } from "../../../data.jsx";
 import { generateSlug } from "../../../utils/slugGenerator.js";
+import { useMemo } from "react";
 
 const ProjectDetails = () => {
   const { title } = useParams();
-  const project = portfolio.find(
-    (project) => generateSlug(project.title) === title
+  const project = useMemo(
+    () => portfolio.find((p) => generateSlug(p.title) === title),
+    [title]
   );
 
+  if (!project) {
+    //  go to 404 page
+    return redirect("*");
+  }
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -27,6 +33,11 @@ const ProjectDetails = () => {
     },
   };
 
+  const breadcrumbVariants = {
+    hidden: { opacity: 0, y: -20 },
+    visible: { opacity: 1, y: 0, transition: { delay: 0.4 } },
+  };
+
   return (
     <motion.div
       className={styles["Project-details"]}
@@ -37,7 +48,7 @@ const ProjectDetails = () => {
       <div className={styles["backdrop-img"]}>
         <img
           src={project.img}
-          alt={project.title}
+          alt={`${project.title} backdrop`}
           className={styles["backdrop-image"]}
         />
         <div className={styles["gradient-overlay"]} />
@@ -47,9 +58,10 @@ const ProjectDetails = () => {
         <div className={styles.left}>
           <motion.div
             className={styles.breadcrumb}
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4 }}
+            variants={breadcrumbVariants}
+            initial="hidden"
+            animate="visible"
+            aria-label="Breadcrumb"
           >
             <Link to="/" className={styles.breadcrumbLink}>
               Home
@@ -64,7 +76,7 @@ const ProjectDetails = () => {
           <motion.img
             className={styles["poster-img"]}
             src={project.img}
-            alt="PosterFallBack"
+            alt={`${project.title} poster`}
             loading="lazy"
             initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
@@ -97,7 +109,8 @@ const ProjectDetails = () => {
           <motion.div className={styles.links} variants={itemVariants}>
             <p className={styles.heading}>____ Links</p>
             <motion.ul>
-              {project.details.map((item, index) => (
+              {/*  if details  */}
+              {project?.details?.map((item, index) => (
                 <motion.li
                   key={index}
                   className={styles.link}
@@ -122,6 +135,15 @@ const ProjectDetails = () => {
                   </motion.a>
                 </motion.li>
               ))}
+              {/* if we dont have details  */}
+              {!project?.details?.length && (
+                <motion.li variants={itemVariants}>
+                  <p className={styles["no-details"]}>
+                    🔒 Due to privacy restrictions, I'm unable to share external
+                    links for this project.
+                  </p>
+                </motion.li>
+              )}
             </motion.ul>
           </motion.div>
         </motion.div>
