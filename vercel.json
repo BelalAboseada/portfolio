@@ -1,0 +1,7 @@
+{
+  "build": {
+    "npm": {
+      "args": "--legacy-peer-deps"
+    }
+  }
+}
