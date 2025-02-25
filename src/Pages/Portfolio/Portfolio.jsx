@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { portfolio } from "../../data";
-import Card from "../../Components/Card/Card";
+import { portfolioData as portfolio } from "../../data";
+// import Card from "../../Components/Card/Card";
 import "./Style.scss";
+import { ProjectCard } from "../../Components/Card/ProjectCard";
 
 const Portfolio = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -30,14 +31,14 @@ const Portfolio = () => {
           React
         </button>
         <button
-          className={selectedCategory === "js" ? "active" : ""}
-          onClick={() => setSelectedCategory("js")}
+          className={selectedCategory === "JS" ? "active" : ""}
+          onClick={() => setSelectedCategory("JS")}
         >
           JavaScript
         </button>
         <button
-          className={selectedCategory === "Html&Css" ? "active" : ""}
-          onClick={() => setSelectedCategory("Html&Css")}
+          className={selectedCategory === "HTML & CSS" ? "active" : ""}
+          onClick={() => setSelectedCategory("HTML & CSS")}
         >
           Html&Css
         </button>
@@ -52,7 +53,7 @@ const Portfolio = () => {
               whileInView={{ opacity: 1 }}
               transition={{ duration: 1.2 }}
             >
-              <Card {...item} />
+              <ProjectCard {...item} />
             </motion.div>
           ))}
         </AnimatePresence>

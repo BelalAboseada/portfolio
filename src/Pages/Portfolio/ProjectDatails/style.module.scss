@@ -1,0 +1,348 @@
+@import "../../../mixins.scss";
+
+.Project-details {
+  --animation-duration: 0.4s;
+  --stagger-delay: 0.1s;
+  width: 100%;
+  background-color: var(--black);
+  padding-top: 0px;
+  margin-bottom: 50px;
+  position: relative;
+  overflow: hidden;
+  height: fit-content;
+
+  @include md {
+    margin-bottom: 0;
+    padding-top: 120px;
+    min-height: 700px;
+    max-height: 100vh;
+  }
+
+  .backdrop-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    z-index: 0;
+
+    .backdrop-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      filter: blur(8px);
+    }
+
+    .gradient-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        180deg,
+        rgba(4, 21, 45, 0) 0%,
+        var(--container-color) 79.17%
+      );
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 100vh;
+    max-width: 1140px;
+    margin: auto;
+    padding: 2rem 0;
+    gap: 25px;
+    z-index: 1;
+
+    @include md {
+      flex-direction: row;
+      gap: 4rem;
+    }
+
+    .left {
+      position: relative;
+      flex-shrink: 0;
+      margin-bottom: 2rem;
+
+      @include md {
+        position: sticky;
+        top: 120px;
+        height: fit-content;
+        margin-bottom: 0;
+      }
+
+      .poster-img {
+        width: 100%;
+        max-width: 500px;
+        border-radius: 16px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        transform: translateZ(0);
+        transition: transform 0.3s ease;
+
+        @include md {
+          width: 400px;
+          height: auto;
+        }
+
+        &:hover {
+          transform: translateZ(10px);
+        }
+      }
+    }
+
+    .right {
+      flex-grow: 1;
+      overflow-y: visible;
+      padding-right: 1rem;
+      scroll-behavior: smooth;
+
+      @include md {
+        max-height: calc(100vh - 200px);
+        overflow-y: auto;
+        padding-right: 2rem;
+      }
+
+      // Custom scrollbar
+      &::-webkit-scrollbar {
+        width: 6px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: rgba(255, 255, 255, 0.05);
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: var(--first-color);
+        border-radius: 4px;
+      }
+
+      // Scroll animation elements
+      [data-animate] {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+        &.visible {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .title {
+        font-size: 2.5rem;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+        position: relative;
+        display: inline-block;
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -5px;
+          left: 0;
+          width: 60px;
+          height: 3px;
+          background: var(--first-color);
+          transition: width 0.3s ease;
+        }
+
+        &:hover::after {
+          width: 100px;
+        }
+      }
+
+      .subtitle {
+        font-size: 1.25rem;
+        margin-bottom: 2rem;
+        opacity: 0.8;
+      }
+
+      .overview {
+        margin-bottom: 3rem;
+
+        .description {
+          li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+
+            &::before {
+              content: "•";
+              position: absolute;
+              left: 0;
+              color: var(--first-color);
+              font-size: 1.5rem;
+              line-height: 1;
+              top: -0.1em;
+            }
+          }
+        }
+      }
+
+      .links {
+        .link {
+          display: flex;
+          align-items: center;
+
+          gap: 1rem;
+          padding: 1rem;
+          margin-bottom: 1rem;
+          background: rgba(255, 255, 255, 0.05);
+          border-radius: 8px;
+          transition: background 0.3s ease;
+
+          &:hover {
+            background: rgba(255, 255, 255, 0.1);
+          }
+
+          .icon-link {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--first-color);
+            background-color: var(--container-color);
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+
+            &:hover {
+              transform: scale(1.1);
+            }
+            @include md {
+              width: 40px;
+              height: 40px;
+            }
+          }
+          .title-link {
+            display: none;
+            @include md {
+              display: block;
+            }
+          }
+          .animated-link {
+            position: relative;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+
+            &::after {
+              content: "";
+              position: absolute;
+              bottom: -2px;
+              left: 0;
+              width: 0;
+              height: 2px;
+              background: var(--first-color);
+              transition: width 0.3s ease;
+            }
+
+            &:hover::after {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.heading {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--first-color);
+  opacity: 0.7;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  background-color: var(--container-color);
+  border-radius: 8px;
+  position: sticky;
+  top: 0;
+  gap: 0.75rem;
+  height: 40px;
+  padding: 0 1rem;
+  margin-bottom: 1.5rem;
+
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  position: relative;
+  z-index: 2;
+
+  &Link {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background: var(--first-color);
+      transition: width 0.3s ease;
+    }
+
+    &:hover {
+      color: var(--first-color);
+
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+
+  &Divider {
+    opacity: 0.6;
+  }
+
+  .currentProject {
+    color: var(--first-color);
+    font-weight: 500;
+    opacity: 0.9;
+  }
+
+  @include md {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.5rem;
+    background-color: transparent;
+    top: -2.5rem;
+    left: 0;
+  }
+}
+
+// Keyframes
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

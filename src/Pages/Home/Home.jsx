@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import "./style.scss";
 import ParticlesComponent from "../../Components/particles/particles";
@@ -10,11 +9,10 @@ function Home() {
           <div
             className="home-data col-lg-6"
             data-aos="fade-right"
-             data-aos-duration="500"
+            data-aos-duration="500"
           >
             <h1 className="title">
-              <span>I am Belal Hesham</span>  a
-              Web developer.
+              <span>I am Belal Hesham</span> a Web developer.
             </h1>
             <p className="home-description">
               I am Egyption based Web developer & Frontend developer focused on

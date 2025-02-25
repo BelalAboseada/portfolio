@@ -156,7 +156,7 @@ export const stats = [
     title: "Be The First Comment",
   },
 ];
-
+// skills
 export const skills = [
   {
     id: 1,
@@ -262,83 +262,67 @@ export const skills = [
   },
 ];
 
-export const portfolio = [
+// portfolio
+export const portfolioData = [
   {
     id: 1,
     img: Movix,
     title: "Movix",
     category: "React",
+    desc: "Movie App",
     details: [
-      {
-        icon: <FiFileText />,
-        title: "Project : ",
-        desc: "Movie App",
-      },
       {
         icon: <FaGithub />,
         title: "Repo : ",
-        desc: (
-          <a
-            href="https://github.com/BelalAboSeda/Movix.git"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            https://github.com/BelalAboSeada/Movix.git
-          </a>
-        ),
+        desc: {
+          title: "https://github.com/BelalAboSeada/Movix.git",
+          link: "https://github.com/BelalAboSeada/Movix.git",
+        },
       },
       {
         icon: <FiExternalLink />,
         title: "Preview : ",
-        desc: (
-          <a
-            href="https://movix-tau-three.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            https://movix-tau-three.vercel.app/
-          </a>
-        ),
+        desc: {
+          title: "https://movix-tau-three.vercel.app/",
+          link: "https://movix-tau-three.vercel.app/",
+        },
       },
+    ],
+    Overview: [
+      "Movie App for Watching Trailer, description, rating and more about movies",
+      "Built using React, React-Router, Redux, and Redux-thunk",
+
+      "Consumed the movie db API to fetch movie data",
+      "Responsive design with smooth animations",
     ],
   },
   {
     id: 2,
     img: CodeZone,
     title: "Code Zone",
-    category: "js",
+    category: "JS",
+    desc: "Landing Page",
     details: [
-      {
-        icon: <FiFileText />,
-        title: "Project : ",
-        desc: "Landing Page",
-      },
       {
         icon: <FaGithub />,
         title: "Repo : ",
-        desc: (
-          <a
-            href="https://github.com/BelalAboSeada/code-zone.git"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            https://github.com/BelalAboSeada/code-zone.git
-          </a>
-        ),
+        desc: {
+          title: "https://github.com/BelalAboSeada/code-zone.git",
+          link: "https://github.com/BelalAboSeada/code-zone.git",
+        },
       },
       {
         icon: <FiExternalLink />,
         title: "Preview : ",
-        desc: (
-          <a
-            href="https://BelalAboSeada.github.io/code-zone/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            https://BelalAboSeada.github.io/code-zone/
-          </a>
-        ),
+        desc: {
+          title: "https://code-zone-belal.vercel.app/",
+          link: "https://code-zone-belal.vercel.app/",
+        },
       },
+    ],
+    Overview: [
+      "Modern landing page for a coding education platform",
+      "Responsive design with smooth animations",
     ],
   },
   {
@@ -346,38 +330,29 @@ export const portfolio = [
     img: YumDash,
     title: "Yum Dash",
     category: "React",
+    desc: "Food delivery E-commerce App",
     details: [
-      {
-        icon: <FiFileText />,
-        title: "Project : ",
-        desc: "Food delivery E-commrce App",
-      },
       {
         icon: <FaGithub />,
         title: "Repo : ",
-        desc: (
-          <a
-            href="https://github.com/BelalAboseada/Yum-Dash.git"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            https://github.com/BelalAboseada/Yum-Dash.git
-          </a>
-        ),
+        desc: {
+          title: "https://github.com/BelalAboSeada/Yum-Dash.git",
+          link: "https://github.com/BelalAboSeada/Yum-Dash.git",
+        },
       },
       {
         icon: <FiExternalLink />,
         title: "Preview : ",
-        desc: (
-          <a
-            href="https://yum-dash.web.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            https://yum-dash.web.app/
-          </a>
-        ),
+        desc: {
+          title: "https://yum-dash-belal.vercel.app/",
+          link: "https://yum-dash-belal.vercel.app/",
+        },
       },
+    ],
+    Overview: [
+      "Food ordering platform with real-time cart management",
+      "Integrated with Firebase to manage the data",
+      "Responsive design with smooth animations",
     ],
   },
   {
@@ -385,311 +360,231 @@ export const portfolio = [
     img: Zakat,
     title: "Zakat App",
     category: "React",
+    desc: "Calculator for Zakat",
     details: [
-      {
-        icon: <FiFileText />,
-        title: "Project : ",
-        desc: "Calculator for  Zakat",
-      },
       {
         icon: <FaGithub />,
         title: "Repo : ",
-        desc: (
-          <a
-            href="https://github.com/BelalAboseada/Zakat-on-Camels.git"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            https://github.com/BelalAboseada/Zakat-on-Camels.git
-          </a>
-        ),
+        desc: {
+          title: "https://github.com/BelalAboSeada/zakat-app.git",
+          link: "https://github.com/BelalAboSeada/zakat-app.git",
+        },
       },
       {
         icon: <FiExternalLink />,
         title: "Preview : ",
-        desc: (
-          <a
-            href="https://zakat-on-camel.vercel.app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            https://zakat-on-camel.vercel.app{" "}
-          </a>
-        ),
+        desc: {
+          title: "https://zakat-app-belal.vercel.app/",
+          link: "https://zakat-app-belal.vercel.app/",
+        },
       },
+    ],
+    Overview: [
+      "Islamic financial calculator for Zakat obligations",
+      "Supports multiple asset types and currencies",
     ],
   },
   {
     id: 5,
     img: Bondi,
     title: "Bondi",
-    category: "Html&Css",
+    category: "HTML & CSS",
+    desc: "Landing Page",
     details: [
-      {
-        icon: <FiFileText />,
-        title: "Project : ",
-        desc: "Landing Page",
-      },
       {
         icon: <FaGithub />,
         title: "Repo : ",
-        desc: (
-          <a
-            href="https://github.com/BelalAboSeada/bondi.git"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            https://github.com/BelalAboSeada/bondi.git
-          </a>
-        ),
+        desc: {
+          title: "https://github.com/BelalAboSeada/bondi.git",
+          link: "https://github.com/BelalAboSeada/bondi.git",
+        },
       },
       {
         icon: <FiExternalLink />,
         title: "Preview : ",
-        desc: (
-          <a
-            href="https://BelalAboSeada.github.io/bondi/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            https://BelalAboSeada.github.io/bondi/
-          </a>
-        ),
+        desc: {
+          title: "https://belalaboseada.github.io/bondi/",
+          link: "https://belalaboseada.github.io/bondi/",
+        },
       },
+    ],
+    Overview: [
+      "Modern responsive landing page",
+      "Built with pure HTML5 and CSS3",
     ],
   },
   {
     id: 6,
     img: Pixel,
     title: "Pixel",
-    category: "js",
+    category: "JS",
+    desc: "Image Editor",
     details: [
-      {
-        icon: <FiFileText />,
-        title: "Project : ",
-        desc: "Image Search ingine",
-      },
       {
         icon: <FaGithub />,
         title: "Repo : ",
-        desc: (
-          <a
-            href="https://github.com/BelalAboSeada/Pixel.git"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            https://github.com/BelalAboSeada/Pixel.git
-          </a>
-        ),
+        desc: {
+          title: "https://github.com/BelalAboSeada/Pixel.git",
+          link: "https://github.com/BelalAboSeada/Pixel.git",
+        },
       },
       {
         icon: <FiExternalLink />,
         title: "Preview : ",
-        desc: (
-          <a
-            href="https://BelalAboSeada.github.io/Pixel/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            https://BelalAboSeada.github.io/Pixel/
-          </a>
-        ),
+        desc: {
+          title: "https://belalaboseada.github.io/pixel/",
+          link: "https://belalaboseada.github.io/pixel/",
+        },
       },
+    ],
+    Overview: [
+      "Browser-based image manipulation tool",
+      "Supports basic filters and transformations",
     ],
   },
   {
     id: 7,
     img: TwitterClone,
     title: "Twitter Clone",
-    category: "Html&Css",
+    category: "HTML & CSS",
+    desc: "App Clone",
     details: [
-      {
-        icon: <FiFileText />,
-        title: "Project : ",
-        desc: "Clone for Twitter",
-      },
       {
         icon: <FaGithub />,
         title: "Repo : ",
-        desc: (
-          <a
-            href="https://BelalAboSeada.github.io/twitter-clone.git"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            https://BelalAboSeada.github.io/twitter-clone.git
-          </a>
-        ),
+        desc: {
+          title: "https://github.com/BelalAboSeada/twitter-clone.git",
+          link: "https://github.com/BelalAboSeada/twitter-clone.git",
+        },
       },
       {
         icon: <FiExternalLink />,
         title: "Preview : ",
-        desc: (
-          <a
-            href="https://BelalAboSeada.github.io/twitter-clone/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            https://BelalAboSeada.github.io/twitter-clone/
-          </a>
-        ),
+        desc: {
+          title: "https://belalaboseada.github.io/twitter-clone/",
+          link: "https://belalaboseada.github.io/twitter-clone/",
+        },
       },
+    ],
+    Overview: [
+      "Static clone of Twitter/X UI",
+      "Responsive layout with CSS Grid",
     ],
   },
   {
     id: 8,
     img: Crud,
-    title: "Crud",
-    category: "js",
+    title: "CRUD System",
+    category: "JS",
+    desc: "Data Management Application",
     details: [
-      {
-        icon: <FiFileText />,
-        title: "Project : ",
-        desc: "Crud System Building With js",
-      },
       {
         icon: <FaGithub />,
         title: "Repo : ",
-        desc: (
-          <a
-            href="https://github.com/BelalAboSeada/cruds-system.git"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            https://github.com/BelalAboSeada/cruds-system.git
-          </a>
-        ),
+        desc: {
+          title: "https://github.com/BelalAboSeada/cruds-system.git",
+          link: "https://github.com/BelalAboSeada/cruds-system.git",
+        },
       },
       {
         icon: <FiExternalLink />,
         title: "Preview : ",
-        desc: (
-          <a
-            href="https://BelalAboSeada.github.io/cruds-system/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            https://BelalAboSeada.github.io/cruds-system/
-          </a>
-        ),
+        desc: {
+          title: "https://BelalAboSeada.github.io/cruds-system/",
+          link: "https://BelalAboSeada.github.io/cruds-system/",
+        },
       },
+    ],
+    Overview: [
+      "Complete CRUD operations implementation",
+      "Local storage data persistence",
     ],
   },
   {
     id: 9,
     img: Kasper,
     title: "Kasper",
-    category: "Html&Css",
+    category: "HTML & CSS",
+    desc: "Landing Page",
     details: [
-      {
-        icon: <FiFileText />,
-        title: "Project : ",
-        desc: "Landing Page",
-      },
       {
         icon: <FaGithub />,
         title: "Repo : ",
-        desc: (
-          <a
-            href="https://github.com/BelalAboSeada/kasper-templete.git"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            https://github.com/BelalAboSeada/kasper-templete.git
-          </a>
-        ),
+        desc: {
+          title: "https://github.com/BelalAboSeada/kasper-templete.git",
+          link: "https://github.com/BelalAboSeada/kasper-templete.git",
+        },
       },
       {
         icon: <FiExternalLink />,
         title: "Preview : ",
-        desc: (
-          <a
-            href="https://BelalAboSeada.github.io/kasper-templete/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            https://BelalAboSeada.github.io/kasper-templete/
-          </a>
-        ),
+        desc: {
+          title: "https://BelalAboSeada.github.io/kasper-templete/",
+          link: "https://BelalAboSeada.github.io/kasper-templete/",
+        },
       },
+    ],
+    Overview: [
+      "Creative agency landing page",
+      "Modern design with CSS animations",
     ],
   },
   {
     id: 10,
     img: starbucks,
-    title: "starbucks",
-    category: "Html&Css",
+    title: "Starbucks",
+    category: "HTML & CSS",
+    desc: "Landing Page",
     details: [
-      {
-        icon: <FiFileText />,
-        title: "Project : ",
-        desc: "Landing Page",
-      },
       {
         icon: <FaGithub />,
         title: "Repo : ",
-        desc: (
-          <a
-            href="https://github.com/BelalAboSeada/starbucks.git"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            https://github.com/BelalAboSeada/starbucks.git
-          </a>
-        ),
+        desc: {
+          title: "https://github.com/BelalAboSeada/starbucks.git",
+          link: "https://github.com/BelalAboSeada/starbucks.git",
+        },
       },
       {
         icon: <FiExternalLink />,
         title: "Preview : ",
-        desc: (
-          <a
-            href="https://BelalAboSeada.github.io/starbucks/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            https://BelalAboSeada.github.io/starbucks/
-          </a>
-        ),
+        desc: {
+          title: "https://BelalAboSeada.github.io/starbucks/",
+          link: "https://BelalAboSeada.github.io/starbucks/",
+        },
       },
+    ],
+    Overview: [
+      "E-commerce landing page clone",
+      "Mobile-first responsive design",
     ],
   },
   {
     id: 11,
     img: Todo,
-    title: "Todolist",
-    category: "js",
+    title: "Todo List",
+    category: "JS",
+    desc: "Task Management App",
     details: [
-      {
-        icon: <FiFileText />,
-        title: "Project : ",
-        desc: "Landing Page",
-      },
       {
         icon: <FaGithub />,
         title: "Repo : ",
-        desc: (
-          <a
-            href="https://github.com/BelalAboSeada/Todolist.git"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            https://github.com/BelalAboSeada/Todolist.git
-          </a>
-        ),
+        desc: {
+          title: "https://github.com/BelalAboSeada/Todolist.git",
+          link: "https://github.com/BelalAboSeada/Todolist.git",
+        },
       },
       {
         icon: <FiExternalLink />,
         title: "Preview : ",
-        desc: (
-          <a
-            href="https://BelalAboSeada.github.io/Todolist/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            https://BelalAboSeada.github.io/Todolist/
-          </a>
-        ),
+        desc: {
+          title: "https://BelalAboSeada.github.io/Todolist/",
+          link: "https://BelalAboSeada.github.io/Todolist/",
+        },
       },
+    ],
+    Overview: [
+      "Interactive task management application",
+      "Local storage for data persistence",
     ],
   },
 ];

@@ -7,7 +7,6 @@ const Skills = () => {
   const [category, setCategory] = useState("Skills");
   const [selectedTab, setSelectedTab] = useState(0);
   const [left, setLeft] = useState(0);
-
   // Function to handle tab selection
   const handleTabClick = (cat, index) => {
     setLeft(index * 100);

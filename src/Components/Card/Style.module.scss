@@ -1,0 +1,28 @@
+.Card {
+  position: relative;
+  margin: 5px 0px;
+  transition: all 0.3s ease;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+.Card_image {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  mask: linear-gradient(to top, transparent 0%, hsl(0, 1%, 17%) 50%);
+  cursor: pointer;
+}
+.Card_title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+  text-align: center;
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+}

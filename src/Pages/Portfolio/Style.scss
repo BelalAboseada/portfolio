@@ -8,10 +8,8 @@
 }
 
 .Portfolio_item {
-  position: relative;
   cursor: pointer;
   border-radius: 10px;
-  overflow: hidden;
 }
 
 .Portfolio_img {
@@ -19,20 +17,24 @@
   width: 100%;
   object-fit: cover;
   vertical-align: middle;
+  mask: linear-gradient(to top, transparent 0%, var(--body-color) 25%);
+
+}
+.Portfolio_title {
 }
 
-.Portfolio_hover {
-  background-color: transparent;
-  backdrop-filter: blur(5px);
-  inset: 0;
-  place-items: center;
-  transition: all 0.5s ease;
-  opacity: 0;
-}
+// .Portfolio_hover {
+//   background-color: transparent;
+//   backdrop-filter: blur(5px);
+//   inset: 0;
+//   place-items: center;
+//   transition: all 0.5s ease;
+//   opacity: 0;
+// }
 
-.Portfolio_item:hover .Portfolio_hover {
-  opacity: 1;
-}
+// .Portfolio_item:hover .Portfolio_hover {
+//   opacity: 1;
+// }
 // category-buttons
 .category-buttons button {
   background-color: var(--body-color);
