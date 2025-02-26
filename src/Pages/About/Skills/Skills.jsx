@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useCallback, useMemo, useState } from "react";
 import { skills } from "../../../data";
 import { Col, Row } from "react-bootstrap";
 import "../style.scss";
@@ -8,22 +8,24 @@ const Skills = () => {
   const [selectedTab, setSelectedTab] = useState(0);
   const [left, setLeft] = useState(0);
   // Function to handle tab selection
-  const handleTabClick = (cat, index) => {
+  const handleTabClick = useCallback((cat, index) => {
     setLeft(index * 100);
     setCategory(cat);
     setSelectedTab(index);
-  };
+  },[selectedTab]);
 
   // Filter skills based on category
-  const filteredSkills = skills.filter((skill) => skill.Cat === category);
-
+  const filteredSkills = useMemo(
+    () => skills.filter((skill) => skill.Cat === category),
+    [category]
+  );
   return (
     <Row>
       <h6 className="Sec_Title">ـــــ My Skills</h6>
 
       <Col lg={6} sm={12} className="skills__content">
-        <h2 className="Skills_heading">What My Programming Skills Included?</h2>
-        <p className="skills_desc">
+        <h2 className="Skills_heading" aria-label="Skills heading">What My Programming Skills Included?</h2>
+        <p className="skills_desc" aria-label="Skills description">
           I specialize in creating intuitive and responsive web interfaces using
           HTML, CSS, and JavaScript, working closely with backend teams to
           integrate via RESTful APIs.
@@ -56,8 +58,9 @@ const Skills = () => {
                 data-aos-anchor-placement="top-left"
                 data-aos-duration="900"
                 data-text={title}
+                aria-label={`Skills ${title}`}
               >
-                <img src={img} alt={title} className="Skills_img" />
+                <img src={img} alt={title} className="Skills_img" loading="lazy" />
               </div>
             </Col>
           ))}

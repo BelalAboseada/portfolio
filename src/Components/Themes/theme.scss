@@ -1,91 +1,91 @@
-
 .Style_Switcher {
-    width: 240px;
-    left: 0;
-    top:7%;
-    background-color: var(--text-white);
-    padding: 15px;
-    z-index: 10;
-    box-shadow: hsl(0, 0, 80%);
-    transform: translateX(-100%);
-    transition: all 0.5s ease;
+  width: 240px;
+  left: 0;
+  top: 7%;
+  background-color: var(--text-white);
+  padding: 15px;
+  z-index: 10;
+  box-shadow: hsl(0, 0, 80%);
+  transform: translateX(-100%);
+  will-change: transform;
+  transition: all 0.5s ease;
 }
 
 .Show_switcher {
-    transform: translateX(0);
+  transform: translateX(0);
 }
 
 .Style_Switcher,
 .theme_toggler {
-    border-radius: 0 5px 5px 0;
+  border-radius: 0 5px 5px 0;
 }
 
 .style_switcher_item {
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 4px;
-    row-gap: 8px;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 4px;
+  row-gap: 8px;
 }
 
 .theme_toggler,
 .Switcher_title,
 .Switcher_Close {
-    color: hsl(0, 0, 40%);
+  color: hsl(0, 0, 40%);
 }
 
 .Switcher_title {
-    font-size: var(--small-font-size); 
-    font-weight: var(--weight-600);
-    border-bottom: 1px solid hsl(0, 0, 87%);
-    padding-bottom: 5px;
-    margin-bottom: 15px;
+  font-size: var(--small-font-size);
+  font-weight: var(--weight-600);
+  border-bottom: 1px solid hsl(0, 0, 87%);
+  padding-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 .theme_toggler {
-    width: 40px;
-    height: 40px;
-    left: 100%;
-    background-color: var(--text-white);
-    font-size: var(--large-font-size);
-    place-items: center;
-    cursor: pointer;
-    box-shadow: 0 0 2px hsl(0, 0, 80%);
-    transition: all 0.5s ease;
+  width: 40px;
+  height: 40px;
+  left: 100%;
+  background-color: var(--text-white);
+  font-size: var(--large-font-size);
+  place-items: center;
+  cursor: pointer;
+  box-shadow: 0 0 2px hsl(0, 0, 80%);
+  transition: all 0.5s ease;
 }
 
 .Show_switcher .theme_toggler {
-    left: -100%;
+  left: -100%;
 }
 
 .Switcher_Close {
-    cursor: pointer;
-    position: fixed;
-    font-size: 20px;
-    top: 5px;
-    right: 15px;
+  cursor: pointer;
+  position: fixed;
+  font-size: 20px;
+  top: 5px;
+  right: 15px;
 }
 
 .theme_img {
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
 }
 
-@media screen and (max-width:576px) {
-    .theme_img {
-        width: 25px;
-        height: 25px;
-    }
+@media screen and (max-width: 576px) {
+  .theme_img {
+    width: 25px;
+    height: 25px;
+  }
 
-    .theme_toggler {
-        width: 35px;
-        height: 35px;
-    }
+  .theme_toggler {
+    width: 35px;
+    height: 35px;
+  }
 
-    .Style_Switcher {
-        top: 15%;
-    }
+  .Style_Switcher {
+    top: 15%;
+  }
 
-    .Switcher_Close {
-        right: 12px;
-    }
+  .Switcher_Close {
+    right: 12px;
+  }
 }

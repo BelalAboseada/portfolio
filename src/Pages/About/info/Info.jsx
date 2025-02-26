@@ -29,8 +29,11 @@ function Info() {
         <Link
           className="CvBtn"
           target="_blank"
+          rel="noopener noreferrer"
           to="https://drive.google.com/file/d/1wsTXzmI736TrNq_zMCQPLb3YbUHzkzCs/view?usp=sharing"
           data-tooltip="Cv"
+          role="button"
+          aria-label="Download CV document"
         >
           <div className="button-wrapper">
             <div className="text">Download Cv</div>
@@ -59,7 +62,14 @@ function Info() {
       </div>
 
       <Tilt options={defaultOptions} className="info__image">
-        <img src={InfoImg} alt="InfoImg" />
+        <img
+          src={InfoImg}
+          alt="Belal Hesham profile illustration"
+          aria-describedby="image-description"
+        />
+        <span hidden id="image-description">
+          Cartoon style illustration of a web developer
+        </span>
       </Tilt>
     </div>
   );
