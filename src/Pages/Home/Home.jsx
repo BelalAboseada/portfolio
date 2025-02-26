@@ -12,7 +12,9 @@ function Home() {
             data-aos-duration="500"
           >
             <h1 className="title">
-              <span>I am Belal Hesham</span> a Web developer.
+              I am
+              <span className="name"> Belal Hesham</span>
+              <span className="role"> Web Developer</span>
             </h1>
             <p className="home-description">
               I am Egyption based Web developer & Frontend developer focused on
@@ -20,7 +22,11 @@ function Home() {
               building excellent software that improves the lives of those
               around me.
             </p>
-            <Link to="/about" className="Btn">
+            <Link
+              to="/about"
+              className="Btn"
+              aria-label="Learn more about Belal Hesham"
+            >
               <span>More about me </span>
               <div className="svg-wrapper-1">
                 <div className="svg-wrapper">

@@ -48,6 +48,8 @@ import Deploy from "./assets/rocket.png";
 import Vscode from "./assets/visual-studio_PvbYL6E.png";
 import Gpt from "./assets/chatbot_hKae2Xk.png";
 import Agile from "./assets/Agile.png";
+import tailwind from "./assets/icons8-tailwind-css-48.png";
+import deepseek from "./assets/deepSeek.png"
 // Status
 import Experience from "./assets/Sucsess.png";
 import Sucsess from "./assets/experiance.png";
@@ -259,10 +261,23 @@ export const skills = [
     Cat: "Tools",
   },
   {
-    id: 15,
+    id: 16,
+    title: "tailwind css",
+    img: tailwind,
+    Cat: "Skills",
+  },
+
+  {
+    id: 17,
+    title: "deep seek",
+    img: deepseek,
+    Cat: "Tools",
+  },
+  {
+    id: 17,
     title: "Agile(Scrum)",
     img: Agile,
-    Cat: "Skills",
+    Cat: "Tools",
   },
 ];
 
@@ -344,7 +359,6 @@ export const portfolioData = [
       "Responsive design with smooth animations",
     ],
   },
-
   {
     id: 5,
     img: Medari,
@@ -410,8 +424,8 @@ export const portfolioData = [
         icon: <FiExternalLink />,
         title: "Preview : ",
         desc: {
-          title: "https://code-zone-belal.vercel.app/",
-          link: "https://code-zone-belal.vercel.app/",
+          title: "https://belalaboseada.github.io/code-zone/",
+          link: "https://belalaboseada.github.io/code-zone/",
         },
       },
     ],
@@ -431,16 +445,16 @@ export const portfolioData = [
         icon: <FaGithub />,
         title: "Repo : ",
         desc: {
-          title: "https://github.com/BelalAboSeada/zakat-app.git",
-          link: "https://github.com/BelalAboSeada/zakat-app.git",
+          title: "https://github.com/BelalAboseada/Zakat-on-Camels.git",
+          link: "https://github.com/BelalAboseada/Zakat-on-Camels.git",
         },
       },
       {
         icon: <FiExternalLink />,
         title: "Preview : ",
         desc: {
-          title: "https://zakat-app-belal.vercel.app/",
-          link: "https://zakat-app-belal.vercel.app/",
+          title: "https://zakat-on-camel.vercel.app/",
+          link: "https://zakat-on-camel.vercel.app/",
         },
       },
     ],

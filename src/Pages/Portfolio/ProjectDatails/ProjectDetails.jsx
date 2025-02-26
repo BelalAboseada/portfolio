@@ -13,7 +13,6 @@ const ProjectDetails = () => {
   );
 
   if (!project) {
-    //  go to 404 page
     return redirect("*");
   }
   const containerVariants = {

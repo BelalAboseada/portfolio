@@ -1,16 +1,15 @@
-
 .Home {
   background-color: var(--body-color);
   color: var(--text-color);
   height: 100vh;
- 
+
   .home-data {
     max-width: 600px;
 
     .title {
       color: var(--title-color);
 
-      span {
+      .name {
         color: var(--first-color);
       }
     }
