@@ -6,12 +6,13 @@ export default defineConfig({
   plugins: [
     react(),
     // Terser is only run during production build
-    process.env.NODE_ENV === 'production' && terser(),
+    process.env.NODE_ENV === "production" && terser(),
   ],
 
   // Build configuration
   build: {
-    minify: 'terser', // You can also use 'esbuild' for better optimization
+    minify: "terser", // You can also use 'esbuild' for better optimization
+    cssCodeSplit: true, // Enable CSS code splitting
     rollupOptions: {
       plugins: [terser()],
     },
@@ -21,7 +22,8 @@ export default defineConfig({
   optimizeDeps: {
     include: [
       // List of libraries you want Vite to treat as dependencies
-      'react', 'react-dom',
+      "react",
+      "react-dom",
     ],
   },
 });

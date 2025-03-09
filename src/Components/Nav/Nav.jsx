@@ -8,7 +8,7 @@ const Nav = () => {
   const [lastScrollY, setLastScrollY] = useState(0);
   const controlNavbar = () => {
     if (window.scrollY > 100) {
-      if (window.scrollY ) {
+      if (window.scrollY) {
         setShow("hide");
       } else {
         setShow("show");

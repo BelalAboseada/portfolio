@@ -9,7 +9,7 @@ import settings from "react-useanimations/lib/settings";
 // Local storage
 
 const STORAGE_KEY = "Color";
-const DEFAULT_COLOR = "hsl(271, 76%, 53%)";
+const DEFAULT_COLOR = "#00A9FF";
 
 const getInitialColor = () => {
   try {
