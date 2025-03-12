@@ -22,15 +22,21 @@ This portfolio is built using the following technologies and libraries:
 
 
 ##  🚀 Features & Highlights
-✅ Fast & Optimized – Uses Vite for blazing-fast performance
+✅ Fast & Optimized – Uses Vite for blazing-fast performance. 
+ 
 ✅ Modern UI & Animations – Framer Motion & AOS for smooth interactions
+ 
 ✅ Responsive & Mobile-Friendly – Fully adaptable design
+
 ✅ Dynamic Navigation – React Router for seamless page transitions
+
 ✅ Scalable State Management – Redux Toolkit for handling global state
 
 ## 📩 Contact & Connect
 💼 Portfolio: https://belal-portfolio.vercel.app/
+
 📧 Email: belalaboseada@gmail.com
+
 📍 LinkedIn: www.linkedin.com/in/belal-hesham
 
 Feel free to explore the code, give feedback, or reach out! 🚀✨
