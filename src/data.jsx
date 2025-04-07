@@ -9,6 +9,7 @@ import { FiFileText, FiExternalLink } from "react-icons/fi";
 // Projects
 import Movix from "./assets/Movix2.png";
 import Medari from "./assets/Mdari.png";
+import MockMate from "./assets/MockMate.png";
 import Request from "./assets/Request.jpg";
 import AlamalDashboard from "./assets/Alamal-dashboard.png";
 import TChat from "./assets/t.chat.png";
@@ -49,7 +50,7 @@ import Vscode from "./assets/visual-studio_PvbYL6E.png";
 import Gpt from "./assets/chatbot_hKae2Xk.png";
 import Agile from "./assets/Agile.png";
 import tailwind from "./assets/icons8-tailwind-css-48.png";
-import deepseek from "./assets/deepSeek.png"
+import deepseek from "./assets/deepSeek.png";
 // Status
 import Experience from "./assets/Sucsess.png";
 import Sucsess from "./assets/experiance.png";
@@ -361,10 +362,43 @@ export const portfolioData = [
   },
   {
     id: 5,
+    img: MockMate,
+    title: "Mock Mate Ai",
+    category: "React",
+    desc: "Ai Interview Coach",
+    details: [
+      {
+        icon: <FaGithub />,
+        title: "Repo :",
+        desc: {
+          title: "https://github.com/BelalAboseada/MockMate-salamHack.git",
+          link: "https://github.com/BelalAboseada/MockMate-salamHack.git",
+        },
+      },
+      {
+        icon: <FiExternalLink />,
+        title: "Preview : ",
+        desc: {
+          title: "https://mock--mate.vercel.app/",
+          link: "https://mock--mate.vercel.app/",
+        },
+      },
+    ],
+    Overview: [
+      "Mock Mate Ai is a cutting-edge AI-powered interview coach designed to help users practice and improve their interview skills.",
+      "It provides tailored mock interviews across various job roles, simulating real-world interview scenarios with intelligent feedback.",
+      "The platform tracks progress by assigning scores after each mock interview, allowing users to monitor their performance over time and identify areas for improvement.",
+      "Additionally, Mock Mate Ai stores your interview history, enabling you to review past sessions, analyze feedback, and continuously refine your approach to different job interviews.",
+      "Whether you're preparing for technical, behavioral, or soft-skill interviews, Mock Mate Ai offers a comprehensive solution to boost your confidence and performance.",
+    ],
+  },
+  {
+    id: 6,
     img: Medari,
     title: "Medari",
     category: "HTML & CSS",
     desc: "Articles Landing Page",
+
     Overview: [
       "Landing page for showcasing articles with dynamic content",
       "Built with Django backend and custom HTML/CSS/Sass UI",
@@ -375,7 +409,7 @@ export const portfolioData = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     img: YumDash,
     title: "Yum Dash",
     category: "React",
@@ -406,7 +440,7 @@ export const portfolioData = [
     ],
   },
   {
-    id: 7,
+    id: 8,
     img: CodeZone,
     title: "Code Zone",
     category: "JS",
@@ -435,7 +469,7 @@ export const portfolioData = [
     ],
   },
   {
-    id: 8,
+    id: 9,
     img: Zakat,
     title: "Zakat App",
     category: "React",
@@ -464,7 +498,7 @@ export const portfolioData = [
     ],
   },
   {
-    id: 9,
+    id: 10,
     img: Bondi,
     title: "Bondi",
     category: "HTML & CSS",
@@ -493,7 +527,7 @@ export const portfolioData = [
     ],
   },
   {
-    id: 10,
+    id: 11,
     img: Pixel,
     title: "Pixel",
     category: "JS",
@@ -522,7 +556,7 @@ export const portfolioData = [
     ],
   },
   {
-    id: 11,
+    id: 12,
     img: TwitterClone,
     title: "Twitter Clone",
     category: "HTML & CSS",
@@ -551,7 +585,7 @@ export const portfolioData = [
     ],
   },
   {
-    id: 12,
+    id: 13,
     img: Crud,
     title: "CRUD System",
     category: "JS",
@@ -580,7 +614,7 @@ export const portfolioData = [
     ],
   },
   {
-    id: 13,
+    id: 14,
     img: Kasper,
     title: "Kasper",
     category: "HTML & CSS",
@@ -609,7 +643,7 @@ export const portfolioData = [
     ],
   },
   {
-    id: 14,
+    id: 15,
     img: starbucks,
     title: "Starbucks",
     category: "HTML & CSS",
@@ -638,7 +672,7 @@ export const portfolioData = [
     ],
   },
   {
-    id: 15,
+    id: 16,
     img: Todo,
     title: "Todo List",
     category: "JS",
